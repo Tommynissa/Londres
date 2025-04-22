@@ -24,20 +24,35 @@
     h1, h2 {
       text-align: center;
     }
-    .btn {
+    .btn, .btn-magique {
       margin-top: 12px;
-      background: #FFD700;
-      color: #000;
+      background: none;
       border: none;
-      padding: 10px 20px;
-      font-weight: bold;
       cursor: pointer;
-      border-radius: 6px;
     }
     .reponse {
       display: none;
       font-size: 0.95em;
       margin-top: 5px;
+      color: #fffacd;
+    }
+    .next-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .next-container img {
+      width: 40px;
+      transition: transform 0.3s;
+    }
+    .next-container span {
+      font-size: 0.9em;
+      color: #FFD700;
+    }
+    .next-container:hover img {
+      transform: scale(1.1);
     }
     .footer {
       position: fixed;
@@ -62,13 +77,18 @@
 <div class="section active">
   <h2>09h30 – Cathédrale Saint-Paul</h2>
   <p><strong>Accès :</strong> 20 min à pied ou métro Farringdon → St Paul’s</p>
-  <p>Escalier emblématique vu dans <em>Le Prisonnier d’Azkaban</em>.</p>
+  <p>La cathédrale Saint-Paul est un chef-d'œuvre baroque célèbre pour son immense dôme, ses cryptes et sa galerie des murmures. C’est ici qu’a été tourné l’escalier en colimaçon dans <em>Le Prisonnier d’Azkaban</em>, menant au cours de divination de Trelawney.</p>
   <iframe width="100%" height="315" src="https://www.youtube.com/embed/1nBPhw4SffE" frameborder="0" allowfullscreen></iframe>
   <p class="devinette">Dans quel film voit-on cet escalier en colimaçon ?</p>
   <button class="btn" onclick="this.nextElementSibling.style.display='block'">→ Réponse</button>
   <p class="reponse">Harry Potter et le Prisonnier d’Azkaban</p>
   <p class="transition">Vous marchez 5 minutes vers le sud pour traverser un célèbre pont londonien…</p>
-  <button class="btn next">→ Lieu suivant</button>
+  <button class="btn-magique next">
+    <div class="next-container">
+      <img src="images/sorcier-dore.png" alt="Sorcier">
+      <span>→ Lieu suivant</span>
+    </div>
+  </button>
 </div>
 
 <div class="footer">
@@ -76,7 +96,7 @@
 </div>
 
 <script>
-  document.querySelectorAll('.btn.next').forEach((btn, index) => {
+  document.querySelectorAll('.btn-magique.next').forEach((btn, index) => {
     btn.addEventListener('click', () => {
       const sections = document.querySelectorAll('.section');
       if (sections[index + 1]) {
