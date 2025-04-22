@@ -26,7 +26,7 @@
       text-align: center;
     }
     iframe {
-      margin: 30px 0 20px;
+      margin: 20px 0;
       display: block;
       width: 100%;
     }
@@ -77,6 +77,11 @@
     .btn-magique:hover img {
       transform: scale(1.1);
     }
+    .lieu-img {
+      width: 100%;
+      margin: 20px 0 10px;
+      border: 1px solid #FFD700;
+    }
     .footer {
       position: fixed;
       bottom: 0;
@@ -86,6 +91,20 @@
     }
     .footer img {
       width: 300px;
+    }
+    .btn-retour {
+      margin-top: 60px;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      background-color: #FFD700;
+      color: #000;
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-weight: bold;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
     }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
@@ -99,12 +118,13 @@
 
 <div class="section active">
   <h2>09h30 – Cathédrale Saint-Paul</h2>
+  <img src="images/stpaul.jpg" alt="Cathédrale Saint-Paul" class="lieu-img">
   <p><strong>Accès :</strong> 20 min à pied ou métro Farringdon → St Paul’s</p>
   <p>La cathédrale Saint-Paul est un chef-d'œuvre baroque célèbre pour son immense dôme, ses cryptes et sa galerie des murmures. C’est ici qu’a été tourné l’escalier en colimaçon dans <em>Le Prisonnier d’Azkaban</em>, menant au cours de divination de Trelawney.</p>
-  <iframe height="315" src="https://www.youtube.com/embed/1nBPhw4SffE" frameborder="0" allowfullscreen></iframe>
   <p class="devinette" style="text-align:center;">Dans quel film voit-on cet escalier en colimaçon ?</p>
   <button class="btn" onclick="this.nextElementSibling.style.display='block'">→ Réponse</button>
   <p class="reponse">Harry Potter et le Prisonnier d’Azkaban</p>
+  <iframe height="315" src="https://www.youtube.com/embed/1nBPhw4SffE" frameborder="0" allowfullscreen></iframe>
   <p class="transition">Vous marchez 5 minutes vers le sud pour traverser un célèbre pont londonien…</p>
   <button class="btn-magique next">
     <div class="next-container">
@@ -114,20 +134,22 @@
   </button>
 </div>
 
+<a class="btn-retour" href="index.html">← Retour à l’accueil</a>
+
 <div class="footer">
   <img src="images/image-doree-londres.png" alt="Illustration dorée">
 </div>
 
 <script>
-  document.querySelectorAll('.btn-magique.next').forEach((btn, index) => {
-    btn.addEventListener('click', () => {
+  document.querySelectorAll('.btn-magique.next').forEach((btn, index) => {{
+    btn.addEventListener('click', () => {{
       const sections = document.querySelectorAll('.section');
-      if (sections[index + 1]) {
+      if (sections[index + 1]) {{
         sections[index + 1].classList.add('active');
-        sections[index + 1].scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
+        sections[index + 1].scrollIntoView({{ behavior: 'smooth' }});
+      }}
+    }});
+  }});
 </script>
 
 </body>
