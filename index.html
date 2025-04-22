@@ -16,10 +16,16 @@
       font-size: 2.2em;
       margin-bottom: 50px;
     }
+    .button-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+    }
     .button {
-      display: inline-block;
-      margin: 12px;
-      padding: 12px 24px;
+      width: 80%;
+      max-width: 320px;
+      padding: 14px 20px;
       background-color: #FFD700;
       color: #000;
       text-decoration: none;
@@ -48,12 +54,14 @@
 
 <h1>Bienvenue dans l'exploration magique de Londres</h1>
 
-<a class="button" href="vendredi.html">Vendredi</a>
-<a class="button" href="samedi.html">Samedi</a>
-<a class="button" href="dimanche.html">Dimanche</a>
-<a class="button" href="lundi.html">Lundi</a>
-<a class="button" href="carte-londres.html">Carte de Londres</a>
-<a class="button" href="carte-metro.html">Carte du métro</a>
+<div class="button-list">
+  <a class="button" href="vendredi.html">Vendredi</a>
+  <a class="button" href="samedi.html">Samedi</a>
+  <a class="button" href="dimanche.html">Dimanche</a>
+  <a class="button" href="lundi.html">Lundi</a>
+  <a class="button" href="carte-londres.html">Carte de Londres</a>
+  <a class="button" href="carte-metro.html">Carte du métro</a>
+</div>
 
 <div class="footer">
   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAABV7bNHAAAABHNCSVQICAgIfAhkiAAABr1JREFUeJzt3T1sHEcUBuD3jwxwBiGQ+SIAEUlSEhBCQAHIkC2v+HV34cIPfxZzNzM7tyrV2+/LKrXr19V1dVVV1U7r7q5qrq6q7urqpt1t7dTU1NTV3V1dXV1dXf3XU/axevvQjzgIvnMO/fnMEDz4kCgQIECBAgAABAgQIECBA4B+gfMSXcdmhmRAAAAAElFTkSuQmCC" />
