@@ -10,18 +10,24 @@
       color: #FFD700;
       font-family: 'Georgia', serif;
       text-align: center;
-      padding: 60px 20px 120px;
+      padding: 60px 20px 60px;
       margin: 0;
     }
     h1 {
       font-size: 2.2em;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 1.4em;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #fff3b2;
     }
     .button-list {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 18px;
+      gap: 14px;
     }
     .button {
       width: 80%;
@@ -40,14 +46,12 @@
       transform: scale(1.05);
     }
     .footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+      margin-top: 60px;
       text-align: center;
       opacity: 0.4;
     }
     .footer img {
-      width: 260px;
+      width: 300px;
     }
   </style>
 </head>
@@ -55,13 +59,19 @@
 
 <h1>Bienvenue dans l'exploration magique de Londres</h1>
 
+<h2>Jours de visite</h2>
 <div class="button-list">
   <a class="button" href="vendredi.html">Vendredi</a>
   <a class="button" href="samedi.html">Samedi</a>
   <a class="button" href="dimanche.html">Dimanche</a>
   <a class="button" href="lundi.html">Lundi</a>
+</div>
+
+<h2>Outils magiques</h2>
+<div class="button-list">
   <a class="button" href="carte-londres.html">Carte de Londres</a>
   <a class="button" href="carte-metro.html">Carte du métro</a>
+  <a class="button" href="planning.html">Planning complet</a>
 </div>
 
 <div class="footer">
