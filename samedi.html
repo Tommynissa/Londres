@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Samedi magique</title>
-  <style>
+<meta charset="utf-8"/>
+<title>Samedi magique</title>
+<style>
     body {
       background-color: #000;
       color: #FFD700;
@@ -112,33 +113,53 @@
   </style>
 </head>
 <body>
-
 <h1>Samedi 19 avril – Journée magique à Londres</h1>
-
 <div class="section active">
-  <h2>09h30 – Cathédrale Saint-Paul</h2>
-  <img src="images/stpaul.jpg" alt="Cathédrale Saint-Paul" class="lieu-img">
-  <p><strong>Accès :</strong> 20 min à pied ou métro Farringdon → St Paul’s</p>
-  <p>La cathédrale Saint-Paul est un chef-d'œuvre baroque célèbre pour son immense dôme, ses cryptes et sa galerie des murmures. C’est ici qu’a été tourné l’escalier en colimaçon dans <em>Le Prisonnier d’Azkaban</em>, menant au cours de divination de Trelawney.</p>
-  <p class="devinette" style="text-align:center;">Dans quel film voit-on cet escalier en colimaçon ?</p>
-  <button class="btn" onclick="this.nextElementSibling.style.display='block'">→ Réponse</button>
-  <p class="reponse">Harry Potter et le Prisonnier d’Azkaban</p>
-  <iframe height="315" src="https://www.youtube.com/embed/1nBPhw4SffE" frameborder="0" allowfullscreen></iframe>
-  <p class="transition">Vous marchez 5 minutes vers le sud pour traverser un célèbre pont londonien…</p>
-  <button class="btn-magique next">
-    <div class="next-container">
-      <img src="images/sorcier-dore.png" alt="Sorcier">
-      <span>→ Lieu suivant</span>
-    </div>
-  </button>
+<h2>09h30 – Cathédrale Saint-Paul</h2>
+<img alt="Cathédrale Saint-Paul" class="lieu-img" src="images/stpaul.jpg"/>
+<p><strong>Accès :</strong> 20 min à pied ou métro Farringdon → St Paul’s</p>
+<p>La cathédrale Saint-Paul est un chef-d'œuvre baroque célèbre pour son immense dôme, ses cryptes et sa galerie des murmures. C’est ici qu’a été tourné l’escalier en colimaçon dans <em>Le Prisonnier d’Azkaban</em>, menant au cours de divination de Trelawney.</p>
+<p class="devinette" style="text-align:center;">Dans quel film voit-on cet escalier en colimaçon ?</p>
+<button class="btn" onclick="this.nextElementSibling.style.display='block'">→ Réponse</button>
+<p class="reponse">Harry Potter et le Prisonnier d’Azkaban</p>
+<iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/1nBPhw4SffE"></iframe>
+<p class="transition">Vous marchez 5 minutes vers le sud pour traverser un célèbre pont londonien…</p>
+<button class="btn-magique next">
+<div class="next-container">
+<img alt="Sorcier" src="images/sorcier-dore.png"/>
+<span>→ Lieu suivant</span>
+</div>
+</button>
+</div>
+<div class="section">
+<h2>10h30 – Millennium Bridge</h2>
+<img alt="Millennium Bridge" class="lieu-img" src="images/millennium_bridge.jpg"/>
+<p class="devinette" style="text-align:center;">Quel célèbre pont piétonnier a été détruit par les Mangemorts dans "Harry Potter et le Prince de Sang-Mêlé" ?</p>
+<button class="btn" onclick="this.nextElementSibling.style.display='block'">→ Réponse</button>
+<p class="reponse">Le Millennium Bridge ! Sa destruction spectaculaire a marqué le début du film.</p>
+<iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/4V3Q2yC7-9g" title="Destruction du Millennium Bridge - Harry Potter"></iframe>
+<p><strong>Trajet :</strong> 10 minutes à pied depuis la Cathédrale Saint-Paul.</p>
+<p>
+    Le Millennium Bridge est un élégant pont suspendu réservé aux piétons qui relie la Cathédrale Saint-Paul à la Tate Modern en traversant la Tamise. 
+    Ce pont ultra moderne est célèbre pour son apparence futuriste... et pour sa destruction spectaculaire dans <em>Harry Potter et le Prince de Sang-Mêlé</em>. 
+    Bien qu'aucune scène n’ait réellement été tournée ici, les effets spéciaux ont recréé une attaque fictive où le pont s'effondre au cœur de Londres.
+  </p>
+<p>
+    Une belle vue sur la rivière, un moment photo parfait… et un clin d'œil glaçant à la magie noire.
+  </p>
+<p class="transition">Vous marchez 10 minutes vers le sud-est pour rejoindre un marché animé…</p>
+<button class="btn-magique next">
+<div class="next-container">
+<img alt="Sorcier" src="images/sorcier-dore.png"/>
+<span>→ Lieu suivant</span>
+</div>
+</button>
 </div>
 
 <a class="btn-retour" href="index.html">← Retour à l’accueil</a>
-
 <div class="footer">
-  <img src="images/image-doree-londres.png" alt="Illustration dorée">
+<img alt="Illustration dorée" src="images/image-doree-londres.png"/>
 </div>
-
 <script>
   document.querySelectorAll('.btn-magique.next').forEach((btn, index) => {
     btn.addEventListener('click', () => {
@@ -150,6 +171,5 @@
     });
   });
 </script>
-
 </body>
 </html>
