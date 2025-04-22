@@ -10,13 +10,14 @@
       color: #FFD700;
       font-family: 'Georgia', serif;
       margin: 0;
-      padding: 60px 20px 140px;
+      padding: 60px 20px 160px;
     }
     .section {
       display: none;
       max-width: 800px;
       margin: auto;
       animation: fadeIn 0.8s ease-in-out;
+      position: relative;
     }
     .section.active {
       display: block;
@@ -24,10 +25,21 @@
     h1, h2 {
       text-align: center;
     }
-    .btn, .btn-magique {
-      margin-top: 12px;
-      background: none;
+    iframe {
+      margin: 30px 0 20px;
+      display: block;
+      width: 100%;
+    }
+    .btn {
+      background-color: #FFD700;
+      color: #000;
       border: none;
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1em;
+      margin: 12px auto 10px;
+      display: block;
       cursor: pointer;
     }
     .reponse {
@@ -35,23 +47,34 @@
       font-size: 0.95em;
       margin-top: 5px;
       color: #fffacd;
+      text-align: center;
     }
-    .next-container {
+    .transition {
+      margin-top: 30px;
+      text-align: center;
+      font-style: italic;
+      color: #ccc;
+    }
+    .btn-magique {
+      position: absolute;
+      right: 0;
+      bottom: -80px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-magique .next-container {
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 12px;
-      margin-top: 20px;
-    }
-    .next-container img {
-      width: 40px;
-      transition: transform 0.3s;
-    }
-    .next-container span {
-      font-size: 0.9em;
+      gap: 10px;
+      font-size: 1.1em;
       color: #FFD700;
     }
-    .next-container:hover img {
+    .btn-magique img {
+      width: 50px;
+      transition: transform 0.3s;
+    }
+    .btn-magique:hover img {
       transform: scale(1.1);
     }
     .footer {
@@ -78,8 +101,8 @@
   <h2>09h30 – Cathédrale Saint-Paul</h2>
   <p><strong>Accès :</strong> 20 min à pied ou métro Farringdon → St Paul’s</p>
   <p>La cathédrale Saint-Paul est un chef-d'œuvre baroque célèbre pour son immense dôme, ses cryptes et sa galerie des murmures. C’est ici qu’a été tourné l’escalier en colimaçon dans <em>Le Prisonnier d’Azkaban</em>, menant au cours de divination de Trelawney.</p>
-  <iframe width="100%" height="315" src="https://www.youtube.com/embed/1nBPhw4SffE" frameborder="0" allowfullscreen></iframe>
-  <p class="devinette">Dans quel film voit-on cet escalier en colimaçon ?</p>
+  <iframe height="315" src="https://www.youtube.com/embed/1nBPhw4SffE" frameborder="0" allowfullscreen></iframe>
+  <p class="devinette" style="text-align:center;">Dans quel film voit-on cet escalier en colimaçon ?</p>
   <button class="btn" onclick="this.nextElementSibling.style.display='block'">→ Réponse</button>
   <p class="reponse">Harry Potter et le Prisonnier d’Azkaban</p>
   <p class="transition">Vous marchez 5 minutes vers le sud pour traverser un célèbre pont londonien…</p>
