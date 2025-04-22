@@ -1,1 +1,91 @@
-<html><head><title>Samedi</title></head><body><h1>Contenu du samedi à venir...</h1></body></html>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Samedi magique</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #FFD700;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 60px 20px 140px;
+    }
+    .section {
+      display: none;
+      max-width: 800px;
+      margin: auto;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    .section.active {
+      display: block;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .btn {
+      margin-top: 12px;
+      background: #FFD700;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+    .reponse {
+      display: none;
+      font-size: 0.95em;
+      margin-top: 5px;
+    }
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      opacity: 0.3;
+    }
+    .footer img {
+      width: 300px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Samedi 19 avril – Journée magique à Londres</h1>
+
+<div class="section active">
+  <h2>09h30 – Cathédrale Saint-Paul</h2>
+  <p><strong>Accès :</strong> 20 min à pied ou métro Farringdon → St Paul’s</p>
+  <p>Escalier emblématique vu dans <em>Le Prisonnier d’Azkaban</em>.</p>
+  <iframe width="100%" height="315" src="https://www.youtube.com/embed/1nBPhw4SffE" frameborder="0" allowfullscreen></iframe>
+  <p class="devinette">Dans quel film voit-on cet escalier en colimaçon ?</p>
+  <button class="btn" onclick="this.nextElementSibling.style.display='block'">→ Réponse</button>
+  <p class="reponse">Harry Potter et le Prisonnier d’Azkaban</p>
+  <p class="transition">Vous marchez 5 minutes vers le sud pour traverser un célèbre pont londonien…</p>
+  <button class="btn next">→ Lieu suivant</button>
+</div>
+
+<div class="footer">
+  <img src="images/image-doree-londres.png" alt="Illustration dorée">
+</div>
+
+<script>
+  document.querySelectorAll('.btn.next').forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      const sections = document.querySelectorAll('.section');
+      if (sections[index + 1]) {
+        sections[index + 1].classList.add('active');
+        sections[index + 1].scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
