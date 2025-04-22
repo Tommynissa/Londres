@@ -148,15 +148,12 @@
     Une belle vue sur la rivière, un moment photo parfait… et un clin d'œil glaçant à la magie noire.
   </p>
 <p class="transition">Vous marchez 10 minutes vers le sud-est pour rejoindre un marché animé…</p>
-
-
 <button class="btn-magique previous" style="position: absolute; left: 0; bottom: -80px;">
 <div class="next-container">
 <img alt="Sorcier" src="images/sorcier-dore.png"/>
 <span>← Lieu précédent</span>
 </div>
 </button>
-
 <button class="btn-magique next">
 <div class="next-container">
 <img alt="Sorcier" src="images/sorcier-dore.png"/>
@@ -168,16 +165,28 @@
 <div class="footer">
 <img alt="Illustration dorée" src="images/image-doree-londres.png"/>
 </div>
+
 <script>
+  const sections = document.querySelectorAll('.section');
+
   document.querySelectorAll('.btn-magique.next').forEach((btn, index) => {
     btn.addEventListener('click', () => {
-      const sections = document.querySelectorAll('.section');
       if (sections[index + 1]) {
         sections[index + 1].classList.add('active');
         sections[index + 1].scrollIntoView({ behavior: 'smooth' });
       }
     });
   });
+
+  document.querySelectorAll('.btn-magique.previous').forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      if (sections[index - 1]) {
+        sections[index - 1].classList.add('active');
+        sections[index - 1].scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
 </script>
+
 </body>
 </html>
