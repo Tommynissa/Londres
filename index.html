@@ -1,15 +1,61 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <title>Accueil - Mini-site magique</title>
   <style>
-    body { background-color: #000; color: #FFD700; font-family: 'Georgia', serif; text-align: center; padding: 40px; }
-    a { color: #FFD700; display: block; margin: 20px 0; font-size: 1.2em; text-decoration: none; }
+    body {
+      background-color: #000;
+      color: #FFD700;
+      font-family: 'Georgia', serif;
+      text-align: center;
+      padding: 40px 20px 120px;
+      background-image: radial-gradient(circle at 20% 30%, rgba(255,255,255,0.05), transparent 70%);
+      background-size: cover;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 40px;
+    }
+    .lien {
+      display: block;
+      margin: 15px 0;
+      font-size: 1.2em;
+      text-decoration: none;
+      color: #FFD700;
+      transition: transform 0.3s;
+    }
+    .lien:hover {
+      transform: scale(1.05);
+      color: #fffacd;
+    }
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      opacity: 0.4;
+    }
+    .footer img {
+      width: 220px;
+    }
   </style>
 </head>
 <body>
-  <h1>Bienvenue sur le mini-site magique de Londres</h1>
-  <a href="samedi.html">→ Explorer le samedi magique</a>
+
+<h1>Bienvenue sur le mini-site magique de Londres</h1>
+
+<a class="lien" href="vendredi.html">→ Vendredi</a>
+<a class="lien" href="samedi.html">→ Samedi</a>
+<a class="lien" href="dimanche.html">→ Dimanche</a>
+<a class="lien" href="lundi.html">→ Lundi</a>
+<a class="lien" href="carte-londres.html">→ Carte de Londres</a>
+<a class="lien" href="carte-metro.html">→ Carte du métro</a>
+
+<div class="footer">
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAABV7bNHAAAABHNCSVQICAgIfAhkiAAABr1JREFUeJzt3T1sHEcUBuD3jwxwBiGQ+SIAEUlSEhBCQAHIkC2v+HV34cIPfxZzNzM7tyrV2+/LKrXr19V1dVVV1U7r7q5qrq6q7urqpt1t7dTU1NTV3V1dXV1dXf3XU/axevvQjzgIvnMO/fnMEDz4kCgQIECBAgAABAgQIECBA4B+gfMSXcdmhmRAAAAAElFTkSuQmCC" />
+</div>
+
 </body>
 </html>
