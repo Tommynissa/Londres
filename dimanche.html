@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<title>Dimanche magique – Oxford &amp; Harry Potter Studios</title>
+<style>
+    body {
+      background-color: #000;
+      color: #FFD700;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 60px 20px 40px;
+    }
+    .section {
+      display: none;
+      max-width: 800px;
+      margin: auto;
+      animation: fadeIn 0.8s ease-in-out;
+      position: relative;
+    }
+    .section.active {
+      display: block;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    iframe {
+      margin: 20px 0;
+      display: block;
+      width: 100%;
+    }
+    .btn {
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1em;
+      margin: 12px auto 10px;
+      display: block;
+      cursor: pointer;
+    }
+    .reponse {
+      display: none;
+      font-size: 0.95em;
+      margin-top: 5px;
+      color: #fffacd;
+      text-align: center;
+    }
+    .transition {
+      margin-top: 30px;
+      text-align: center;
+      font-style: italic;
+      color: #ccc;
+    }
+    .btn-magique {
+      position: absolute;
+      right: 0;
+      bottom: -80px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-magique .next-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1em;
+      color: #FFD700;
+    }
+    .btn-magique img {
+      width: 50px;
+      transition: transform 0.3s;
+    }
+    .btn-magique:hover img {
+      transform: scale(1.1);
+    }
+    .lieu-img {
+      width: 100%;
+      margin: 20px 0 10px;
+      border: 1px solid #FFD700;
+    }
+    .footer {
+      width: 100%;
+      text-align: center;
+      opacity: 0.3;
+      margin-top: 80px;
+    }
+    .footer img {
+      width: 300px;
+    }
+    .btn-retour {
+      margin-top: 60px;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      background-color: #FFD700;
+      color: #000;
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-weight: bold;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style></head>
+<body>
+<h1>Dimanche 20 avril – D’Oxford aux coulisses de la magie</h1>
+<div class="section active">
+<h2>Matin – Oxford, la ville des sorciers</h2>
+<img alt="Oxford" class="lieu-img" src="images/oxford.jpg"/>
+<p><strong>Trajet :</strong> Départ à <strong>07h30</strong> depuis Gloucester Road Station (ligne Piccadilly). Bus direct jusqu’à Oxford. Trajet d’environ <strong>1h45</strong>.</p>
+<p>
+      Laissez-vous charmer par les ruelles pavées, les grandes tours gothiques et les collèges historiques d’<strong>Oxford</strong>, où plusieurs scènes d’Harry Potter ont été tournées.
+    </p>
+<p>
+      Ne manquez pas la <strong>Bodleian Library</strong>, le <strong>Christ Church College</strong> et la grande salle qui a inspiré celle de Poudlard !
+    </p>
+<p class="transition">Après cette matinée studieuse, direction les studios où la magie prend vie...</p>
+<button class="btn-magique next">
+<div class="next-container">
+<img alt="Sorcier" src="images/sorcier-dore.png"/>
+<span>→ Lieu suivant</span>
+</div>
+</button>
+
+<iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/tH9qklhQy2g" title="Oxford - Lieux de tournage Harry Potter"></iframe>
+</div>
+<div class="section">
+<h2>Après-midi – Warner Bros. Studio Tour</h2>
+<img alt="Warner Bros. Studio Tour" class="lieu-img" src="images/harry_potter_studio.jpg"/>
+<iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/EvJt7xI8WcQ" title="Warner Bros. Studio Tour Harry Potter – UK"></iframe>
+<p><strong>Trajet :</strong> Depuis Oxford, un bus vous emmène directement au studio (trajet organisé).</p>
+<p>
+    Bienvenue dans les coulisses des films <strong>Harry Potter</strong> ! Costumes, décors, objets magiques, baguettes, Chemin de Traverse, et bien sûr la Grande Salle de Poudlard vous y attendent.
+  </p>
+<p>
+    Préparez-vous à vivre une immersion totale dans le monde des sorciers, avec des effets spéciaux, du Quidditch et une reconstitution fidèle des scènes cultes.
+  </p>
+<p class="transition">Après cette visite inoubliable, retour à Londres avec des étoiles (et de la magie) plein les yeux.</p>
+<button class="btn-magique previous" style="position: absolute; left: 0; bottom: -80px;">
+<div class="next-container">
+<img alt="Sorcier" src="images/sorcier-dore.png"/>
+<span>← Lieu précédent</span>
+</div>
+</button>
+</div>
+<a class="btn-retour" href="index.html">← Retour à l’accueil</a>
+<div class="footer">
+<img alt="Illustration dorée" src="images/image-doree-londres.png"/>
+</div>
+</body>
+</html>
