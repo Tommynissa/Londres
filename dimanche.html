@@ -151,7 +151,6 @@
 <span>← Lieu précédent</span>
 </div>
 </button>
-
 <button class="btn-magique previous" style="position: absolute; left: 0; bottom: -80px;">
 <div class="next-container">
 <img alt="Sorcier" src="images/sorcier-dore.png"/>
@@ -163,5 +162,29 @@
 <div class="footer">
 <img alt="Illustration dorée" src="images/image-doree-londres.png"/>
 </div>
-</body>
+<script>
+    const sections = document.querySelectorAll('.section');
+
+    document.querySelectorAll('.btn-magique.next').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const currentSection = btn.closest('.section');
+        const nextSection = currentSection.nextElementSibling;
+        if (nextSection && nextSection.classList.contains('section')) {
+          nextSection.classList.add('active');
+          nextSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    document.querySelectorAll('.btn-magique.previous').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const currentSection = btn.closest('.section');
+        const prevSection = currentSection.previousElementSibling;
+        if (prevSection && prevSection.classList.contains('section')) {
+          prevSection.classList.add('active');
+          prevSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script></body>
 </html>
