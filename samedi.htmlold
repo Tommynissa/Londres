@@ -119,12 +119,11 @@
 <a href="carte_londres.html" style="color: #FFD700; text-decoration: none;">Carte</a>
 <a href="carte_metro.html" style="color: #FFD700; text-decoration: none;">Métro</a>
 </nav>
-
 <h1>Samedi 19 avril – Journée magique à Londres</h1>
 <div class="section active">
 <h2>09h30 – Cathédrale Saint-Paul</h2>
 <img alt="Cathédrale Saint-Paul" class="lieu-img" src="images/stpaul.jpg"/>
-<p style="color: #fff3b2; font-style: italic; margin-bottom: 12px;">Accès : Depuis l'hôtel, marchez 10 minutes jusqu’à Chancery Lane Station. Prenez la Central Line direction est et descendez à St. Paul’s Station. La cathédrale est à 3 minutes à pied de la sortie de la station.</p>
+<p style="color: #fff3b2; font-style: italic; margin-bottom: 12px;">Accès : Depuis l'hôtel, marchez 10 minutes jusqu’à Chancery Lane Station. Prenez la Central Line direction est et descendez à St. Paul’s Station. La cathédrale est à 3 minutes à pied de la sortie de la station.</p><p style="text-align:center; margin: -10px 0 20px;"><a href="https://www.google.com/maps/dir/15-28+Eyre+Street+Hill,+London+EC1R+5EW/St.+Paul's+Cathedral,+St.+Paul's+Churchyard,+London/@51.5202796,-0.1124079,16.96z/data=!3m1!5s0x48761b4d0c202bed:0x7fbe13b6d22e8ac5!4m14!4m13!1m5!1m1!1s0x48761b511f78769d:0x74b85d0840cd9b6e!2m2!1d-0.1099582!2d51.5224592!1m5!1m1!1s0x48761b4d28eec7b7:0x8c1e72fdffca18e5!2m2!1d-0.0983506!2d51.513845!3e2" style="color:#FFD700; font-style:italic; text-decoration:underline;" target="_blank">→ Itinéraire Google Maps à pied</a></p>
 <p>La cathédrale Saint-Paul est un chef-d'œuvre baroque célèbre pour son immense dôme, ses cryptes et sa galerie des murmures. C’est ici qu’a été tourné l’escalier en colimaçon dans <em>Le Prisonnier d’Azkaban</em>, menant au cours de divination de Trelawney.</p>
 <p class="devinette" style="text-align:center;">Dans quel film voit-on cet escalier en colimaçon ?</p><button class="btn" onclick="this.nextElementSibling.style.display='block'">→ Réponse</button><p class="reponse">Harry Potter et le Prisonnier d’Azkaban</p><iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/1nBPhw4SffE"></iframe><p class="transition">Vous marchez 5 minutes vers le sud pour traverser un célèbre pont londonien…</p>
 <button class="btn-magique next">
@@ -137,7 +136,7 @@
 <div class="section">
 <h2>10h30 – Millennium Bridge</h2>
 <img alt="Millennium Bridge" class="lieu-img" src="images/millennium_bridge.jpg"/>
-<p style="color: #fff3b2; font-style: italic; margin-bottom: 12px;">Trajet : À la sortie sud de la Cathédrale Saint-Paul, suivez Peter’s Hill en ligne droite. Le Millennium Bridge est à environ 5-6 minutes à pied.</p>
+<p style="color: #fff3b2; font-style: italic; margin-bottom: 12px;">Trajet : À la sortie sud de la Cathédrale Saint-Paul, suivez Peter’s Hill en ligne droite. Le Millennium Bridge est à environ 5-6 minutes à pied.</p><p style="text-align:center; margin: -10px 0 20px;"><a href="https://www.google.com/maps/dir/St.+Paul's+Cathedral,+St.+Paul's+Churchyard,+London/Millennium+Bridge,+Thames+Embankment,+London/@51.5128016,-0.1022224,17z/data=!4m14!4m13!1m5!1m1!1s0x48761b4d28eec7b7:0x8c1e72fdffca18e5!2m2!1d-0.0983506!2d51.513845!1m5!1m1!1s0x487604ad36040877:0x401a46f03688bdeb!2m2!1d-0.0983597!2d51.508112!3e2" style="color:#FFD700; font-style:italic; text-decoration:underline;" target="_blank">→ Itinéraire Google Maps à pied</a></p>
 <p>
     Le Millennium Bridge est un élégant pont suspendu réservé aux piétons qui relie la Cathédrale Saint-Paul à la Tate Modern en traversant la Tamise. 
     Ce pont ultra moderne est célèbre pour son apparence futuriste... et pour sa destruction spectaculaire dans <em>Harry Potter et le Prince de Sang-Mêlé</em>. 
@@ -152,88 +151,6 @@
 <img alt="Sorcier" src="images/sorcier-dore.png"/>
 <span>← Lieu précédent</span>
 </div>
-<div class="section">
-  <h2>11h00 – Borough Market</h2>
-  <p>Découvrez l’un des plus anciens marchés alimentaires de Londres, célèbre pour sa scène du Chaudron Baveur.</p>
-  <p style="text-align:center;">
-    <a href="https://www.google.com/maps/dir/Millennium+Bridge/Borough+Market/@51.5074,-0.093,17z" target="_blank"
-       style="color:#FFD700; font-style:italic; text-decoration:underline;">
-      → Itinéraire Google Maps à pied
-    </a>
-  </p>
-</div>
-
-<div class="section">
-  <h2>12h00 – Leadenhall Market</h2>
-  <p>Un lieu magique ayant inspiré le Chemin de Traverse, à explorer absolument.</p>
-  <p style="text-align:center;">
-    <a href="https://www.google.com/maps/dir/Borough+Market/Leadenhall+Market/@51.5107,-0.0905,17z" target="_blank"
-       style="color:#FFD700; font-style:italic; text-decoration:underline;">
-      → Itinéraire Google Maps à pied
-    </a>
-  </p>
-</div>
-
-<div class="section">
-  <h2>12h45 – Déjeuner à Shake Shack, Covent Garden</h2>
-  <p>Pause déjeuner dans le quartier animé de Covent Garden.</p>
-  <p style="text-align:center;">
-    <a href="https://www.google.com/maps/dir/Leadenhall+Market/Shake+Shack,+Covent+Garden/@51.5127,-0.11,15z" target="_blank"
-       style="color:#FFD700; font-style:italic; text-decoration:underline;">
-      → Itinéraire Google Maps à pied
-    </a>
-  </p>
-</div>
-
-<div class="section">
-  <h2>14h00 – Goodwin’s Court</h2>
-  <p>Ruelle secrète et inspiration évidente du Chemin de Traverse.</p>
-  <p style="text-align:center;">
-    <a href="https://www.google.com/maps/dir/Shake+Shack,+Covent+Garden/Goodwin's+Court/@51.5117,-0.123,17z" target="_blank"
-       style="color:#FFD700; font-style:italic; text-decoration:underline;">
-      → Itinéraire Google Maps à pied
-    </a>
-  </p>
-</div>
-
-<div class="section">
-  <h2>14h30 – King’s Cross – Voie 9¾</h2>
-  <p>Incontournable photo à la gare de King’s Cross sous le panneau "Platform 9¾".</p>
-  <p style="text-align:center;">
-    <a href="https://www.google.com/maps/dir/Goodwin's+Court/King's+Cross+Station/@51.5300,-0.123,15z" target="_blank"
-       style="color:#FFD700; font-style:italic; text-decoration:underline;">
-      → Itinéraire Google Maps à pied
-    </a>
-  </p>
-</div>
-
-<div class="section">
-  <h2>15h30 – Camden Market</h2>
-  <p>Un marché éclectique et vivant, parfait pour flâner.</p>
-  <p style="text-align:center;">
-    <a href="https://www.google.com/maps/dir/King's+Cross+Station/Camden+Market/@51.5395,-0.137,14z" target="_blank"
-       style="color:#FFD700; font-style:italic; text-decoration:underline;">
-      → Itinéraire Google Maps à pied
-    </a>
-  </p>
-</div>
-
-<div class="section">
-  <h2>17h00 – Piccadilly Circus</h2>
-  <p>Flânerie dans les rues commerçantes et ambiance londonienne au cœur de la ville.</p>
-  <p style="text-align:center;">
-    <a href="https://www.google.com/maps/dir/Camden+Market/Piccadilly+Circus/@51.514,-0.134,14z" target="_blank"
-       style="color:#FFD700; font-style:italic; text-decoration:underline;">
-      → Itinéraire Google Maps à pied
-    </a>
-  </p>
-</div>
-
-<div class="section">
-  <h2>19h30 – Dîner (Dishoom King’s Cross ou Sky Garden)</h2>
-  <p>Terminez la journée avec une belle expérience culinaire dans un lieu d’exception.</p>
-</div>
-
 </button>
 <button class="btn-magique next">
 <div class="next-container">
