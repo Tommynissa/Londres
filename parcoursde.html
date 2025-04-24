@@ -14,30 +14,38 @@ body {
   padding: 20px;
   text-align: center;
 }
-
-.jour {
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0);
-  width: 120px;
-  height: 60px;
-  cursor: pointer;
-  z-index: 10;
-  pointer-events: auto;
+.map-container {
+  position: relative;
+  display: inline-block;
 }
 .map-container img {
   width: 100%;
   max-width: 700px;
   border: 3px solid #FFD700;
-  z-index: 1;
-  position: relative;
+  display: block;
 }
+.jour {
+  position: absolute;
+  background-color: rgba(255, 215, 0, 0.4); /* visible */
+  border: 1px solid #FFD700;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 100;
+  text-align: center;
+  line-height: 50px;
+  color: #000;
+}
+#vendredi { top: 50px; left: 100px; }
+#samedi { top: 130px; left: 200px; }
+#dimanche { top: 210px; left: 300px; }
+#lundi { top: 290px; left: 400px; }
 .jour span {
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
-  color: transparent;
 }
 </style>
 </head>
