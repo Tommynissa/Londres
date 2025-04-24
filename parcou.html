@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<title>Suivez le parcours magique</title>
+<style>
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+.map-container {
+  position: relative;
+  display: inline-block;
+}
+.map-container img {
+  width: 100%;
+  max-width: 700px;
+  border: 3px solid #FFD700;
+  display: block;
+}
+.jour {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0); /* invisible mais actif */
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 100;
+}
+#vendredi { top: 70px; left: 100px; }
+#samedi { top: 60px; left: 460px; }
+#dimanche { top: 280px; left: 290px; }
+#lundi { top: 480px; left: 120px; }
+.jour span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  color: transparent;
+}
+</style>
+</head>
+<body>
+<h1>Suivez le parcours magique</h1>
+<div class="map-container">
+<img alt="Parcours magique" src="images/parcours.jpg"/>
+<a class="jour" href="vendredifinal.html" id="vendredi" style="top: 100px; left: 120px;" title="Vendredi"><span>Vendredi</span></a>
+<a class="jour" href="samedifinal.html" id="samedi" style="top: 180px; left: 200px;" title="Samedi"><span>Samedi</span></a>
+<a class="jour" href="dimanchefinal.html" id="dimanche" style="top: 260px; left: 280px;" title="Dimanche"><span>Dimanche</span></a>
+<a class="jour" href="lundi_final.html" id="lundi" style="top: 340px; left: 360px;" title="Lundi"><span>Lundi</span></a>
+</div>
+<a class="retour" href="index.html">← Retour à l’accueil</a>
+</body>
+</html>
