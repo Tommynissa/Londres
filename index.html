@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<title>Accueil - Mini-site magique</title>
+<style>
+    body {
+      background-color: #000;
+      color: #FFD700;
+      font-family: 'Georgia', serif;
+      text-align: center;
+      padding: 60px 20px 60px;
+      margin: 0;
+    }
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 1.4em;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #fff3b2;
+    }
+    .button-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+    .button {
+      width: 80%;
+      max-width: 320px;
+      padding: 14px 20px;
+      background-color: #FFD700;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      font-size: 1.1em;
+      transition: all 0.3s ease;
+    }
+    .button:hover {
+      background-color: #fffacd;
+      transform: scale(1.05);
+    }
+    .footer {
+      margin-top: 60px;
+      text-align: center;
+      opacity: 0.4;
+    }
+    .footer img {
+      width: 420px;
+    }
+  </style>
+</head>
+<body>
+<h1>Bienvenue dans l'exploration magique de Londres</h1>
+
+<style>
+.map-container {
+  position: relative;
+  width: 700px;
+  height: 875px;
+  margin: 40px auto;
+}
+.map-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+}
+.jour {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+  text-align: center;
+  color: transparent;
+}
+#vendredi {
+  top: 115px;
+  left: 45px;
+  width: 288px;
+  height: 120px;
+}
+#samedi {
+  top: 100px;
+  left: 467px;
+  width: 187px;
+  height: 156px;
+}
+#dimanche {
+  top: 370px;
+  left: 265px;
+  width: 144px;
+  height: 156px;
+}
+#lundi {
+  top: 655px;
+  left: 95px;
+  width: 144px;
+  height: 120px;
+}
+.jour span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+</style>
+<h2>Parcours interactif</h2>
+<div class="map-container">
+  <img src="images/parcours.jpg" alt="Carte magique interactive"/>
+  <a href="vendredi.html" class="jour" id="vendredi"><span>Vendredi</span></a>
+  <a href="samedi.html" class="jour" id="samedi"><span>Samedi</span></a>
+  <a href="dimanche.html" class="jour" id="dimanche"><span>Dimanche</span></a>
+  <a href="lundi.html" class="jour" id="lundi"><span>Lundi</span></a>
+</div>
+
+<h2>Outils magiques</h2>
+<div class="button-list">
+<a class="button" href="carte_londres.html">Carte de Londres</a>
+<a class="button" href="carte_metro.html">Carte du métro</a>
+<a class="button" href="planning.html">Planning complet</a>
+</div>
+<div class="footer">
+<img alt="Illustration dorée Londres" src="images/image-doree-londres.png"/>
+</div>
+</body>
+</html>
