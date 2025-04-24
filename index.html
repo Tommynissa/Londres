@@ -75,11 +75,38 @@
       left: 0;
       top: 0;
     }
-</style>
+
+    .button-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+    .button {
+      width: 80%;
+      max-width: 320px;
+      padding: 14px 20px;
+      background-color: #FFD700;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      font-size: 1.1em;
+      transition: all 0.3s ease;
+    }
+    .button:hover {
+      background-color: #fffacd;
+      transform: scale(1.05);
+    }
+    </style>
 </head>
 <body>
-<h1>Bienvenue dans l'exploration magique de Londres</h1>
-<h2>Parcours interactif</h2>
+
+<h1 style="font-size: 3.4em; font-weight: bold; color: #FFD700;
+           text-shadow: 0 0 5px #fff8dc, 0 0 15px #FFD700;">
+  Voyages à Londres
+</h1>
+
 <div class="map-container">
   <img src="images/parcours.jpg" alt="Carte magique interactive"/>
   <a href="vendredi.html" class="jour" id="vendredi"><span>Vendredi</span></a>
