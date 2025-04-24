@@ -230,32 +230,30 @@
 <div class="footer">
 <img alt="Illustration dorée" src="images/image-doree-londres.png"/>
 </div>
-
 <script>
   const sections = document.querySelectorAll('.section');
+
   document.querySelectorAll('.btn-magique.next').forEach((btn) => {
     btn.addEventListener('click', () => {
       const currentSection = btn.closest('.section');
       const nextSection = currentSection.nextElementSibling;
       if (nextSection && nextSection.classList.contains('section')) {
-        sections.forEach(s => s.classList.remove('active'));
         nextSection.classList.add('active');
         nextSection.scrollIntoView({ behavior: 'smooth' });
       }
     });
   });
+
   document.querySelectorAll('.btn-magique.previous').forEach((btn) => {
     btn.addEventListener('click', () => {
       const currentSection = btn.closest('.section');
       const prevSection = currentSection.previousElementSibling;
       if (prevSection && prevSection.classList.contains('section')) {
-        sections.forEach(s => s.classList.remove('active'));
         prevSection.classList.add('active');
         prevSection.scrollIntoView({ behavior: 'smooth' });
       }
     });
   });
 </script>
-
 </body>
 </html>
