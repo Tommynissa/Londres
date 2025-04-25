@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+<meta charset="utf-8"/>
+<title>Samedi magique</title>
+<style>
+    body {
+      background-color: #000;
+      color: #FFD700;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 60px 20px 40px;
+    }
+    .section {
+      display: none;
+      max-width: 800px;
+      margin: auto;
+      animation: fadeIn 0.8s ease-in-out;
+      position: relative;
+    }
+    .section.active {
+      display: block;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    iframe {
+      margin: 20px 0;
+      display: block;
+      width: 100%;
+    }
+    .btn {
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1em;
+      margin: 12px auto 10px;
+      display: block;
+      cursor: pointer;
+    }
+    .reponse {
+      display: none;
+      font-size: 0.95em;
+      margin-top: 5px;
+      color: #fffacd;
+      text-align: center;
+    }
+    .transition {
+      margin-top: 30px;
+      text-align: center;
+      font-style: italic;
+      color: #ccc;
+    }
+    .btn-magique {
+      position: absolute;
+      right: 0;
+      bottom: -80px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-magique .next-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1em;
+      color: #FFD700;
+    }
+    .btn-magique img {
+      width: 50px;
+      transition: transform 0.3s;
+    }
+    .btn-magique:hover img {
+      transform: scale(1.1);
+    }
+    .lieu-img {
+      width: 100%;
+      margin: 20px 0 10px;
+      border: 1px solid #FFD700;
+    }
+    .footer {
+      width: 100%;
+      text-align: center;
+      opacity: 0.3;
+      margin-top: 80px;
+    }
+    .footer img {
+      width: 300px;
+    }
+    .btn-retour {
+      margin-top: 60px;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      background-color: #FFD700;
+      color: #000;
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-weight: bold;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<nav style="display: flex; gap: 20px; font-size: 0.95em; margin-bottom: 30px; justify-content: flex-start;">
+<a href="index.html" style="color: #FFD700; text-decoration: none;">Accueil</a>
+<a href="planning.html" style="color: #FFD700; text-decoration: none;">Planning</a>
+<a href="carte_londres.html" style="color: #FFD700; text-decoration: none;">Carte</a>
+<a href="carte_metro.html" style="color: #FFD700; text-decoration: none;">Métro</a>
+</nav>
+
+<h1>Samedi 19 avril – Journée magique à Londres</h1>
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn-retour" href="index.html">← Retour à l’accueil</a>
+
+<div class="footer">
+<img alt="Illustration dorée" src="images/image-doree-londres.png"/>
+</div>
+
+<script>
+  const sections = document.querySelectorAll('.section');
+
+  document.querySelectorAll('.btn-magique.next').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const currentSection = btn.closest('.section');
+      const nextSection = currentSection.nextElementSibling;
+      if (nextSection && nextSection.classList.contains('section')) {
+        nextSection.classList.add('active');
+        nextSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  document.querySelectorAll('.btn-magique.previous').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const currentSection = btn.closest('.section');
+      const prevSection = currentSection.previousElementSibling;
+      if (prevSection && prevSection.classList.contains('section')) {
+        prevSection.classList.add('active');
+        prevSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>
