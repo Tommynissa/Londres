@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="fr">
-<head><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<head>
 <meta charset="utf-8"/>
 <title>Samedi magique</title>
 <style>
@@ -110,65 +110,7 @@
       to { opacity: 1; transform: translateY(0); }
     }
   </style>
-<style>
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-}
-.section {
-  padding: 20px;
-  box-sizing: border-box;
-}
-img.lieu-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto 20px auto;
-}
-iframe {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-}
-.btn-magique, .btn {
-  display: block;
-  width: 90%;
-  max-width: 400px;
-  margin: 15px auto;
-  font-size: 1em;
-}
-a {
-  word-break: break-word;
-}
-@media (max-width: 600px) {
-  h1, h2 {
-    font-size: 1.4em;
-    text-align: center;
-  }
-  p {
-    font-size: 1em;
-  }
-  .footer img {
-    max-width: 90%;
-  }
-  .btn-magique.previous,
-  .btn-magique.next {
-    position: static !important;
-    display: block !important;
-    margin: 10px auto !important;
-    width: 90% !important;
-    max-width: 300px;
-  }
-  .next-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-  }
-}
-</style></head>
+</head>
 <body>
 <nav style="display: flex; gap: 20px; font-size: 0.95em; margin-bottom: 30px; justify-content: flex-start;">
 <a href="index.html" style="color: #FFD700; text-decoration: none;">Accueil</a>
@@ -179,7 +121,7 @@ a {
 <h1>Samedi 19 avril – Journée magique à Londres</h1>
 <div class="section active" id="lieu-1"><h2>09h30 – Cathédrale Saint-Paul</h2><img alt="Cathédrale Saint-Paul" class="lieu-img" src="images/stpaul.jpg"/><p style="color: #fff3b2; font-style: italic; margin-bottom: 12px;">Accès : Depuis l’hôtel, marchez 10 minutes jusqu’à la station Chancery Lane. Prenez la Central Line direction Est. Descendez à St. Paul’s Station. La cathédrale est à 3 minutes à pied de la sortie. Durée totale : environ 15 minutes.</p><p style="text-align:center;"><a href="https://www.google.com/maps/dir/Farringdon+Station/St+Paul's+Cathedral" style="color: #fff3b2; font-style: italic; margin-bottom: 12px;" target="_blank">→ Itinéraire Google Maps à pied</a></p><p>
 <p style="text-align: center; margin-bottom: 20px;">
-<a href="documents/stpaul.pdf" style="color: #FFD700; text-decoration: underline;" target="_blank">
+  <a href="documents/stpaul.pdf" target="_blank" style="color: #FFD700; text-decoration: underline;">
     → Voir les billets pour la visite de la cathédrale Saint-Paul (PDF)
   </a>
 </p>
