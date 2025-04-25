@@ -100,18 +100,10 @@
         margin-top: 25px;
         margin-bottom: 10px;
     }
-    
-    h1 {
-      font-size: 2.3em;
-      font-weight: bold;
-      color: #FFD700;
-      margin-top: 25px;
-      margin-bottom: 20px;
-      letter-spacing: 1px;
-    }
     </style>
 </head>
-<body><h1>Week-end à Londres</h1>
+<body>
+<h1>Week-end à Londres</h1>
 <div class="grid">
 <a href="vendredi.html"><img alt="Vendredi" src="images/jour1.jpg"/></a>
 <a href="samedi.html"><img alt="Samedi" src="images/jour2.jpg"/></a>
