@@ -1,17 +1,19 @@
 
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Week-end à Londres</title>
-  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
-  <style>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&amp;display=swap" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Week-end à Londres</title>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&amp;display=swap" rel="stylesheet"/>
+<style>
     body {
       margin: 0;
       padding: 0;
       background-color: #000;
-      color: #FFD700;
+      color: #000;
       font-family: 'IM Fell English SC', serif;
       text-align: center;
     }
@@ -25,13 +27,12 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 15px;
-      padding: 20px;
+      padding: 20px 15px 10px;
       max-width: 600px;
       margin: auto;
     }
     .grid a {
       display: block;
-      border: none;
       border-radius: 8px;
       overflow: hidden;
       transition: transform 0.3s ease;
@@ -44,50 +45,64 @@
       height: auto;
       display: block;
     }
+    .nav-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin-top: 25px;
+      padding-bottom: 30px;
+    }
     .nav-link {
       display: block;
-      margin: 12px auto;
       padding: 14px 24px;
+      width: 85%;
       max-width: 300px;
-      border: 1px solid #FFD70055;
+      background: #a87d2d;
+      border: 1px solid #8a6726;
       border-radius: 6px;
-      background: #111;
-      color: #FFD700;
+      color: #000;
       text-decoration: none;
       font-size: 1em;
       transition: all 0.3s ease;
     }
     .nav-link:hover {
-      background: #1a1a1a;
-      border-color: #FFD700;
+      background: #8a6726;
+      border-color: #000;
     }
     .footer {
-      margin: 40px 0 20px;
+      margin: 30px 0 20px;
       font-size: 0.9em;
       color: #888;
     }
     @media (max-width: 600px) {
+      h1 {
+        font-size: 1.7em;
+      }
       .grid {
         grid-template-columns: 1fr 1fr;
         gap: 10px;
       }
     }
-  </style>
+  
+    .nav-link {
+        font-family: 'IM Fell English SC', serif;
+    }
+    </style>
 </head>
 <body>
-  <h1>Week-end à Londres</h1>
-
-  <div class="grid">
-    <a href="vendredi.html"><img src="images/jour1.jpg" alt="Vendredi"></a>
-    <a href="samedi.html"><img src="images/jour2.jpg" alt="Samedi"></a>
-    <a href="dimanche.html"><img src="images/jour3.jpg" alt="Dimanche"></a>
-    <a href="lundi.html"><img src="images/jour4.jpg" alt="Lundi"></a>
-  </div>
-
-  <a href="planning.html" class="nav-link">Planning complet</a>
-  <a href="carte_londres.html" class="nav-link">Carte de Londres</a>
-  <a href="carte_metro.html" class="nav-link">Plan du métro</a>
-
-  <div class="footer">© Le Parcours Magique</div>
+<h1>Week-end à Londres</h1>
+<div class="grid">
+<a href="vendredi.html"><img alt="Vendredi" src="images/jour1.jpg"/></a>
+<a href="samedi.html"><img alt="Samedi" src="images/jour2.jpg"/></a>
+<a href="dimanche.html"><img alt="Dimanche" src="images/jour3.jpg"/></a>
+<a href="lundi.html"><img alt="Lundi" src="images/jour4.jpg"/></a>
+</div>
+<div class="nav-buttons">
+<a class="nav-link" href="planning.html">Planning complet</a>
+<a class="nav-link" href="carte_londres.html">Carte de Londres</a>
+<a class="nav-link" href="carte_metro.html">Plan du métro</a>
+</div>
+<div class="footer">© Le Parcours Magique</div>
 </body>
 </html>
