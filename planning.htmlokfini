@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 
 <html lang="fr">
-<head><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<head>
 <meta charset="utf-8"/>
 <title>Planning complet</title>
 <style>
@@ -45,37 +45,7 @@
       background-color: #fff3b2;
     }
   </style>
-<style>
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 30px;
-}
-th, td {
-  padding: 10px;
-  border: 1px solid #FFD700;
-  font-size: 1em;
-}
-@media (max-width: 600px) {
-  h1 {
-    font-size: 1.5em;
-  }
-  th, td {
-    font-size: 0.95em;
-    padding: 8px;
-  }
-}
-</style></head>
+</head>
 <body>
 <nav style="display: flex; gap: 20px; font-size: 0.95em; margin-bottom: 30px; justify-content: flex-start;">
 <a href="index.html" style="color: #FFD700; text-decoration: none;">Accueil</a>
@@ -83,6 +53,7 @@ th, td {
 <a href="carte_londres.html" style="color: #FFD700; text-decoration: none;">Carte</a>
 <a href="carte_metro.html" style="color: #FFD700; text-decoration: none;">Métro</a>
 </nav>
+
 <h1>Planning complet du samedi 19 avril</h1>
 <h2 style="color: #fff3b2; margin-top: 30px; border-bottom: 1px solid #FFD700; padding-bottom: 5px;">Matin</h2>
 <ul style="padding-left: 10px; list-style-type: none;">
