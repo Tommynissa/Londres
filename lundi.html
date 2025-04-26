@@ -141,19 +141,46 @@
   border-color: #000;
 }
 
-/* Couleur du texte descriptif */
+/* Couleur par défaut du texte descriptif */
 .section p {
   color: #a87d2d;
 }
 
-/* Exceptions pour certains éléments */
+/* Exceptions pour trajets et liens */
+.section p strong, 
+.section p a {
+  color: #fff3b2;
+  font-style: italic;
+}
+
+/* Transition entre sections */
 .section p.transition {
   color: #ccc;
   font-style: italic;
 }
+
+/* Liens */
 .section a {
   color: #fff3b2;
   text-decoration: underline;
+}
+
+/* Boutons nav-link */
+.nav-link {
+  font-family: 'IM Fell English SC', serif;
+  background: #a87d2d;
+  border: 1px solid #8a6726;
+  border-radius: 6px;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.nav-link:hover {
+  background: #8a6726;
+  border-color: #000;
 }
 </style><style>
 body {
