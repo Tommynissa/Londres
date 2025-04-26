@@ -9,7 +9,7 @@
     body {
       background-color: #000;
       color: #FFD700;
-      font-family: 'IM Fell English SC', serif;
+      font-family: 'Georgia', serif;
       margin: 0;
       padding: 60px 20px 40px;
     }
@@ -111,6 +111,7 @@
       to { opacity: 1; transform: translateY(0); }
     }
   
+/* Style des boutons uniquement */
 .nav-buttons {
   display: flex;
   flex-direction: column;
@@ -139,11 +140,26 @@
   background: #8a6726;
   border-color: #000;
 }
+
+/* Couleur du texte descriptif */
+.section p {
+  color: #a87d2d;
+}
+
+/* Exceptions pour certains éléments */
+.section p.transition {
+  color: #ccc;
+  font-style: italic;
+}
+.section a {
+  color: #fff3b2;
+  text-decoration: underline;
+}
 </style><style>
 body {
   margin: 0;
   padding: 0;
-  font-family: 'IM Fell English SC', serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 .section {
   padding: 20px;
@@ -198,7 +214,7 @@ a {
   }
 }
 </style><link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&amp;display=swap" rel="stylesheet"/></head>
-<body style="font-family: 'IM Fell English SC', serif;">
+<body>
 <nav style="display: flex; gap: 20px; font-size: 0.95em; margin-bottom: 30px; justify-content: flex-start;">
 <a href="index.html" style="color: #FFD700; text-decoration: none;">Accueil</a>
 <a href="planning.html" style="color: #FFD700; text-decoration: none;">Planning</a>
@@ -209,12 +225,12 @@ a {
 <div class="section active"><p>On commence cette journée en prenant de la hauteur...</p>
 <h2>09h00 – Sky Garden</h2>
 <img alt="Sky Garden" class="lieu-img" src="images/sky_garden.jpg"/>
-<p style="color: #fff3b2; font-style: italic; margin-bottom: 12px;">Trajet : Depuis l’hôtel, prenez le métro à Farringdon Station (Ligne Circle) et descendez à Monument. Marchez 5 minutes jusqu’à l’entrée du Sky Garden.</p><p style="text-align:center; margin: -10px 0 20px;"><a href="https://www.google.com/maps/dir/15-28+Eyre+Street+Hill,+London+EC1R+5EW/Sky+Garden,+1+Sky+Garden+Walk,+London+EC3M+8AF/@51.520465,-0.1038783,15z/data=!3m1!4b1!3e2" style="color: #fff3b2; text-decoration: underline;" target="_blank">→ Itinéraire Google Maps à pied</a></p>
+<p>Trajet : Depuis l’hôtel, prenez le métro à Farringdon Station (Ligne Circle) et descendez à Monument. Marchez 5 minutes jusqu’à l’entrée du Sky Garden.</p><p><a href="https://www.google.com/maps/dir/15-28+Eyre+Street+Hill,+London+EC1R+5EW/Sky+Garden,+1+Sky+Garden+Walk,+London+EC3M+8AF/@51.520465,-0.1038783,15z/data=!3m1!4b1!3e2" style="color: #fff3b2; text-decoration: underline;" target="_blank">→ Itinéraire Google Maps à pied</a></p>
 <p>
     Situé au sommet du gratte-ciel “Walkie Talkie”, le <strong>Sky Garden</strong> est un jardin suspendu à 160 mètres de haut, offrant une vue panoramique sur tout Londres.
   </p>
 <p>Et quoi de mieux pour bien démarrer la journée qu’un petit déjeuner face à la ville, dans l’un des cafés du Sky Garden ?
-<p style="text-align: center; margin-bottom: 20px;">
+<p>
 <a href="documents/skygardenresa.pdf" style="color: #FFD700; text-decoration: underline;" target="_blank">
     → Voir la réservation du petit déjeuner au Sky Garden (PDF)
   </a>
@@ -228,7 +244,7 @@ a {
 <div class="section">
 <h2>10h15 – Tower Bridge</h2>
 <img alt="Tower Bridge" class="lieu-img" src="images/tower_bridge.jpg"/>
-<p style="color: #fff3b2; font-style: italic; margin-bottom: 12px;"><strong>Trajet :</strong> À pied depuis le Sky Garden – environ 7 minutes de marche.</p><p style="text-align:center; margin: -10px 0 20px;"><a href="https://www.google.com/maps/dir/Sky+Garden,+1+Sky+Garden+Walk,+London+EC3M+8AF/Tower+Bridge,+London/@51.509885,-0.0849397,17z/data=!3m1!4b1!3e2" style="color: #fff3b2; text-decoration: underline;" target="_blank">→ Itinéraire Google Maps à pied</a></p>
+<p><strong>Trajet :</strong> À pied depuis le Sky Garden – environ 7 minutes de marche.</p><p><a href="https://www.google.com/maps/dir/Sky+Garden,+1+Sky+Garden+Walk,+London+EC3M+8AF/Tower+Bridge,+London/@51.509885,-0.0849397,17z/data=!3m1!4b1!3e2" style="color: #fff3b2; text-decoration: underline;" target="_blank">→ Itinéraire Google Maps à pied</a></p>
 <p>
     Symbole emblématique de Londres, le <strong>Tower Bridge</strong> enjambe la Tamise depuis plus d’un siècle.
     Son style néogothique, ses deux tours imposantes et ses passerelles suspendues en font l’un des ponts les plus photogéniques du monde.
@@ -242,7 +258,7 @@ a {
 <div class="section">
 <h2>10h30 – Tour de Londres</h2>
 <img alt="Tour de Londres" class="lieu-img" src="images/tour_londres.jpg"/>
-<p style="color: #fff3b2; font-style: italic; margin-bottom: 12px;"><strong>Trajet :</strong> 3 minutes à pied depuis Tower Bridge, en longeant la Tamise.</p><p style="text-align:center; margin: -10px 0 20px;"><a href="https://www.google.com/maps/dir/Tower+Bridge,+London/Tower+of+London,+London/@51.5076783,-0.0781255,17z/data=!3m1!4b1!3e2" style="color: #fff3b2; text-decoration: underline;" target="_blank">→ Itinéraire Google Maps à pied</a></p>
+<p><strong>Trajet :</strong> 3 minutes à pied depuis Tower Bridge, en longeant la Tamise.</p><p><a href="https://www.google.com/maps/dir/Tower+Bridge,+London/Tower+of+London,+London/@51.5076783,-0.0781255,17z/data=!3m1!4b1!3e2" style="color: #fff3b2; text-decoration: underline;" target="_blank">→ Itinéraire Google Maps à pied</a></p>
 <p>
     La <strong>Tour de Londres</strong> est l’un des monuments les plus emblématiques et mystérieux de la ville.
     Ancienne prison, forteresse et palais royal, elle abrite aujourd’hui les Joyaux de la Couronne.
@@ -256,7 +272,7 @@ a {
 <div class="section">
 <h2>11h00 – Relève de la Garde à Buckingham Palace</h2>
 <img alt="Buckingham Palace" class="lieu-img" src="images/buckingham.jpg"/>
-<p style="color: #fff3b2; font-style: italic; margin-bottom: 12px;"><strong>Trajet :</strong> Depuis la Tour de Londres, prenez la ligne District ou Circle depuis Tower Hill jusqu’à St James's Park. Marchez ensuite 10 minutes vers le palais.</p><p style="text-align:center; margin: -10px 0 20px;"><a href="https://www.google.com/maps/dir/Tower+of+London/Buckingham+Palace,+London/@51.5083396,-0.1076625,14z/data=!3m1!4b1!3e2" style="color: #fff3b2; text-decoration: underline;" target="_blank">→ Itinéraire Google Maps à pied</a></p>
+<p><strong>Trajet :</strong> Depuis la Tour de Londres, prenez la ligne District ou Circle depuis Tower Hill jusqu’à St James's Park. Marchez ensuite 10 minutes vers le palais.</p><p><a href="https://www.google.com/maps/dir/Tower+of+London/Buckingham+Palace,+London/@51.5083396,-0.1076625,14z/data=!3m1!4b1!3e2" style="color: #fff3b2; text-decoration: underline;" target="_blank">→ Itinéraire Google Maps à pied</a></p>
 <p>
     Tous les jours ou jours alternés à 11h, la <strong>Relève de la Garde</strong> attire les foules devant <strong>Buckingham Palace</strong>.
     Les gardes en uniforme rouge et bonnet à poils d’ours défilent avec une précision impressionnante, accompagnés de fanfares militaires.
@@ -270,7 +286,7 @@ a {
 <div class="section">
 <h2>11h45 – St. James’s Park</h2>
 <img alt="St. James’s Park" class="lieu-img" src="images/st_james_park.jpg"/>
-<p style="color: #fff3b2; font-style: italic; margin-bottom: 12px;"><strong>Trajet :</strong> À pied depuis Buckingham Palace, directement en face de la place du palais.</p><p style="text-align:center; margin: -10px 0 20px;"><a href="https://www.google.com/maps/dir/Buckingham+Palace,+London/St.+James's+Park,+London/@51.5012322,-0.1401899,17z/data=!3m1!4b1!3e2" style="color: #fff3b2; text-decoration: underline;" target="_blank">→ Itinéraire Google Maps à pied</a></p>
+<p><strong>Trajet :</strong> À pied depuis Buckingham Palace, directement en face de la place du palais.</p><p><a href="https://www.google.com/maps/dir/Buckingham+Palace,+London/St.+James's+Park,+London/@51.5012322,-0.1401899,17z/data=!3m1!4b1!3e2" style="color: #fff3b2; text-decoration: underline;" target="_blank">→ Itinéraire Google Maps à pied</a></p>
 <p>
 <strong>St. James’s Park</strong> est l’un des parcs royaux les plus charmants de Londres. Traversé par un petit lac habité par des cygnes et des pélicans,
     il offre un cadre parfait pour une balade ou une pause après la cérémonie.
@@ -284,7 +300,7 @@ a {
 <div class="section">
 <h2>12h15 – Big Ben &amp; Palais de Westminster</h2>
 <img alt="Big Ben et Palais de Westminster" class="lieu-img" src="images/big_ben.jpg"/>
-<p style="color: #fff3b2; font-style: italic; margin-bottom: 12px;"><strong>Trajet :</strong> Depuis St. James’s Park, marchez 10 minutes vers l’est, en direction du pont de Westminster.</p><p style="text-align:center; margin: -10px 0 20px;"><a href="https://www.google.com/maps/dir/St.+James's+Park,+London/Big+Ben,+London/@51.5001842,-0.1347634,17z/data=!3m1!4b1!3e2" style="color: #fff3b2; text-decoration: underline;" target="_blank">→ Itinéraire Google Maps à pied</a></p>
+<p><strong>Trajet :</strong> Depuis St. James’s Park, marchez 10 minutes vers l’est, en direction du pont de Westminster.</p><p><a href="https://www.google.com/maps/dir/St.+James's+Park,+London/Big+Ben,+London/@51.5001842,-0.1347634,17z/data=!3m1!4b1!3e2" style="color: #fff3b2; text-decoration: underline;" target="_blank">→ Itinéraire Google Maps à pied</a></p>
 <p>
 <strong>Big Ben</strong>, ou plutôt l’Elizabeth Tower, est l’un des symboles les plus célèbres de Londres. Son carillon retentit toutes les heures depuis 1859.
   </p>
@@ -297,7 +313,7 @@ a {
 <div class="section">
 <h2>12h30 – Westminster Abbey</h2>
 <img alt="Westminster Abbey" class="lieu-img" src="images/westminster_abbey.jpg"/>
-<p style="color: #fff3b2; font-style: italic; margin-bottom: 12px;"><strong>Trajet :</strong> À deux minutes à pied depuis Big Ben, en traversant la place du Parlement.</p><p style="text-align:center; margin: -10px 0 20px;"><a href="https://www.google.com/maps/dir/Big+Ben,+London/Westminster+Abbey,+London/@51.4998673,-0.1271902,18z/data=!3m1!4b1!3e2" style="color: #fff3b2; text-decoration: underline;" target="_blank">→ Itinéraire Google Maps à pied</a></p>
+<p><strong>Trajet :</strong> À deux minutes à pied depuis Big Ben, en traversant la place du Parlement.</p><p><a href="https://www.google.com/maps/dir/Big+Ben,+London/Westminster+Abbey,+London/@51.4998673,-0.1271902,18z/data=!3m1!4b1!3e2" style="color: #fff3b2; text-decoration: underline;" target="_blank">→ Itinéraire Google Maps à pied</a></p>
 <p>
 <strong>Westminster Abbey</strong> est l’un des édifices religieux les plus importants du Royaume-Uni. Cette abbaye gothique accueille les couronnements,
     mariages et funérailles royales depuis des siècles.
@@ -311,7 +327,7 @@ a {
 <div class="section">
 <h2>13h00 – Pause déjeuner</h2>
 <img alt="Pause déjeuner à Londres" class="lieu-img" src="images/restaurant.jpg"/>
-<p style="color: #fff3b2; font-style: italic; margin-bottom: 12px;"><strong>Trajet :</strong> Depuis Westminster Abbey, plusieurs options sont accessibles à pied ou en métro léger.</p>
+<p><strong>Trajet :</strong> Depuis Westminster Abbey, plusieurs options sont accessibles à pied ou en métro léger.</p>
 <p>
     Il est temps de recharger les batteries ! Autour de Westminster, vous trouverez plusieurs options agréables pour déjeuner :
     <ul>
@@ -328,7 +344,7 @@ a {
 <div class="section">
 <h2>14h00 – Croisière en Uber Boat vers Greenwich</h2>
 <img alt="Croisière sur la Tamise" class="lieu-img" src="images/uber_boat.jpg"/>
-<p style="color: #fff3b2; font-style: italic; margin-bottom: 12px;"><strong>Trajet :</strong> Depuis la pause déjeuner, rendez-vous à pied au <strong>London Eye Pier</strong> en longeant la Tamise (10 min).</p><p style="text-align:center; margin: -10px 0 20px;"><a href="https://www.google.com/maps/dir/Westminster+Abbey,+London/London+Eye+Pier,+London/@51.5011061,-0.1248477,16.81z/data=!3m1!4b1!3e2" style="color: #fff3b2; text-decoration: underline;" target="_blank">→ Itinéraire Google Maps à pied</a></p>
+<p><strong>Trajet :</strong> Depuis la pause déjeuner, rendez-vous à pied au <strong>London Eye Pier</strong> en longeant la Tamise (10 min).</p><p><a href="https://www.google.com/maps/dir/Westminster+Abbey,+London/London+Eye+Pier,+London/@51.5011061,-0.1248477,16.81z/data=!3m1!4b1!3e2" style="color: #fff3b2; text-decoration: underline;" target="_blank">→ Itinéraire Google Maps à pied</a></p>
 <p>
     Montez à bord de l’<strong>Uber Boat by Thames Clippers</strong> pour une croisière magique vers Greenwich !
     En chemin, admirez les plus beaux monuments londoniens depuis l’eau : St. Paul’s Cathedral, la City, le Tower Bridge, et bien d’autres.
@@ -341,7 +357,7 @@ a {
 <div class="section">
 <h2>15h30 – Retour à l’hôtel &amp; fin de journée</h2>
 <img alt="Retour à l'hôtel" class="lieu-img" src="images/hotel.jpg"/>
-<p style="color: #fff3b2; font-style: italic; margin-bottom: 12px;"><strong>Trajet :</strong> Depuis Greenwich, vous pouvez revenir en Uber Boat ou prendre le DLR + métro jusqu’à Farringdon Station.</p>
+<p><strong>Trajet :</strong> Depuis Greenwich, vous pouvez revenir en Uber Boat ou prendre le DLR + métro jusqu’à Farringdon Station.</p>
 <p>
     Après cette journée bien remplie entre jardins suspendus, ponts mythiques, monuments royaux et croisière fluviale,
     c’est le moment de rentrer à l’hôtel pour vous reposer, faire vos valises… ou prolonger la magie avec un dernier dîner.
