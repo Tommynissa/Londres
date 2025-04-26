@@ -5,16 +5,16 @@
   <title>Samedi - Planning Magique</title>
   <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
   <style>
-    body { background: #111; color: #a87d2d; font-family: 'Segoe UI', sans-serif; padding: 20px; }
-    h1, h2, nav { font-family: 'IM Fell English SC', serif; color: #FFD700; text-align: center; }
+    body { background-color: #111; color: #a87d2d; font-family: 'Segoe UI', sans-serif; padding: 20px; }
+    h1, h2, nav { font-family: 'IM Fell English SC', serif; color: #FFD700; }
     section { margin-bottom: 80px; }
     img { width: 100%; border-radius: 10px; margin-top: 10px; }
     a { color: #FFD700; text-decoration: none; }
-    button { background: transparent; border: 1px solid #FFD700; border-radius: 20px; padding: 8px 20px; color: #FFD700; margin-top: 10px; }
-    button:hover { background: #FFD700; color: #111; }
+    button { background: transparent; border: 1px solid #FFD700; border-radius: 25px; padding: 10px 20px; margin-top: 10px; color: #FFD700; }
+    button:hover { background-color: #FFD700; color: #111; }
     .navigation-buttons { display: flex; justify-content: space-between; margin-top: 30px; }
-    .navigation-buttons a { display: inline-block; padding: 10px 20px; border: 1px solid #FFD700; border-radius: 25px; margin: 10px; }
-    .navigation-buttons a:hover { background: #FFD700; color: #111; }
+    .navigation-buttons a { display: inline-block; padding: 10px 20px; border: 1px solid #FFD700; border-radius: 25px; text-decoration: none; }
+    .navigation-buttons a:hover { background-color: #FFD700; color: #111; }
   </style>
 </head>
 <body>
@@ -26,9 +26,8 @@
   <img src="images/st_paul.jpg" alt="Cathédrale Saint-Paul">
   <p><strong>Accès :</strong> Métro St Paul's Station (Central Line).</p>
   <p><a href="https://maps.app.goo.gl/Ln3Y5VmR2jzzijD36" target="_blank">Voir sur Google Maps</a></p>
-  <p>Chef-d’œuvre baroque au cœur de Londres, la cathédrale Saint-Paul est une icône majestueuse.  
-  Construite par Sir Christopher Wren après le Grand Incendie de 1666, elle est célèbre pour son immense dôme.  
-  Admirez la nef, la crypte et surtout la vue depuis la Golden Gallery (après avoir gravi 528 marches !).</p>
+  <p>Chef-d’œuvre baroque construit par Sir Christopher Wren après le grand incendie de 1666.  
+  Le dôme de Saint-Paul domine la City de Londres. À l’intérieur, découvrez la crypte, la Whispering Gallery, et une vue panoramique exceptionnelle.</p>
   <div class="navigation-buttons">
     <div></div>
     <a href="#lieu-2">→ Lieu suivant</a>
@@ -40,11 +39,10 @@
   <img src="images/millennium_bridge.jpg" alt="Millennium Bridge">
   <p><strong>Accès :</strong> À pied depuis Saint-Paul (2 minutes).</p>
   <p><a href="https://maps.app.goo.gl/Qn6CKK9JNHh74ucq9" target="_blank">Voir sur Google Maps</a></p>
-  <p>Le Millennium Bridge est le pont suspendu ultra-moderne reliant la City à la Tate Modern.  
-  Dans "Harry Potter et le Prince de Sang-Mêlé", il est détruit par une attaque des Mangemorts.  
-  Traversez-le pour ressentir l'ambiance unique de Londres.</p>
+  <p>Le pont suspendu piétonnier ultra-moderne détruit dans "Harry Potter et le Prince de Sang-Mêlé" par les Mangemorts.  
+  Traversez-le pour rejoindre la rive sud et admirer la vue.</p>
   <div class="devinette">
-    <p><strong>Devinette :</strong> Quel pont londonien est détruit par les Mangemorts dans les films Harry Potter ?</p>
+    <p><strong>Devinette :</strong> Quel pont moderne de Londres s’effondre sous l’attaque des Mangemorts ?</p>
     <button onclick="document.getElementById('reponse-millennium').style.display='block'">Révéler la réponse</button>
     <p id="reponse-millennium" style="display:none; color:#a87d2d;">Millennium Bridge</p>
   </div>
@@ -62,11 +60,11 @@
   <img src="images/borough_market.jpg" alt="Borough Market">
   <p><strong>Accès :</strong> Métro London Bridge Station (Northern Line ou Jubilee Line).</p>
   <p><a href="https://maps.app.goo.gl/wquMQEF2ipVZxvGs6" target="_blank">Voir sur Google Maps</a></p>
-  <p>Un des plus anciens marchés de Londres, fréquenté pour ses étals colorés et sa street food.  
-  Dans "Le Prisonnier d’Azkaban", Harry descend du Magicobus à proximité du marché.  
-  Idéal pour une balade gourmande et animée.</p>
+  <p>Le plus ancien marché alimentaire de Londres.  
+  Dans "Harry Potter et le Prisonnier d’Azkaban", Harry descend du Magicobus ici.  
+  Ambiance animée entre étals de fromages, pâtisseries, et cuisine du monde entier.</p>
   <div class="devinette">
-    <p><strong>Devinette :</strong> Dans quel marché Harry arrive-t-il en descendant du Magicobus ?</p>
+    <p><strong>Devinette :</strong> Dans quel marché Harry arrive-t-il après sa traversée en Magicobus ?</p>
     <button onclick="document.getElementById('reponse-borough').style.display='block'">Révéler la réponse</button>
     <p id="reponse-borough" style="display:none; color:#a87d2d;">Borough Market</p>
   </div>
@@ -78,16 +76,15 @@
     <a href="#lieu-4">→ Lieu suivant</a>
   </div>
 </section>
-
 <section id="lieu-4">
   <h2>Leadenhall Market</h2>
   <img src="images/leadenhall_market.jpg" alt="Leadenhall Market">
   <p><strong>Accès :</strong> À pied depuis Borough Market (~15 minutes) ou métro Bank Station.</p>
   <p><a href="https://maps.app.goo.gl/wStA1dPrg4PBJt8p7" target="_blank">Voir sur Google Maps</a></p>
-  <p>Superbe marché couvert victorien, Leadenhall Market a servi de décor pour représenter l'entrée du Chemin de Traverse.  
-  Ses arches colorées et son ambiance hors du temps valent largement la visite.</p>
+  <p>Superbe marché couvert victorien utilisé pour représenter l'entrée du Chemin de Traverse dans "Harry Potter à l’école des sorciers".  
+  Baladez-vous sous ses arches colorées dans une ambiance magique et historique.</p>
   <div class="devinette">
-    <p><strong>Devinette :</strong> Quel marché victorien a été utilisé pour représenter l'entrée du Chemin de Traverse ?</p>
+    <p><strong>Devinette :</strong> Quel marché victorien fut choisi pour figurer l'entrée du Chemin de Traverse ?</p>
     <button onclick="document.getElementById('reponse-leadenhall').style.display='block'">Révéler la réponse</button>
     <p id="reponse-leadenhall" style="display:none; color:#a87d2d;">Leadenhall Market</p>
   </div>
@@ -105,22 +102,23 @@
   <img src="images/shake_shack.jpg" alt="Shake Shack Covent Garden">
   <p><strong>Accès :</strong> Métro Covent Garden Station (Piccadilly Line).</p>
   <p><a href="https://maps.app.goo.gl/CNSxsnK2MuwiVnyX6" target="_blank">Voir sur Google Maps</a></p>
-  <p>Pause gourmande dans l’ambiance animée de Covent Garden, célèbre pour ses spectacles de rue.  
-  Les burgers de Shake Shack sont une institution à Londres pour une pause déjeuner rapide et savoureuse !</p>
+  <p>Pause déjeuner bien méritée à Shake Shack, dans l'animation de Covent Garden.  
+  Burgers, frites croustillantes, et spectacles de rue rythment cette halte gourmande au cœur de Londres.</p>
   <div class="navigation-buttons">
     <a href="#lieu-4">← Lieu précédent</a>
     <a href="#lieu-6">→ Lieu suivant</a>
   </div>
 </section>
+
 <section id="lieu-6">
   <h2>Goodwin’s Court</h2>
   <img src="images/goodwins_court.jpg" alt="Goodwin's Court">
   <p><strong>Accès :</strong> À pied depuis Covent Garden (~5 minutes).</p>
   <p><a href="https://maps.app.goo.gl/hmgpHK8g8Dn8HtLP7" target="_blank">Voir sur Google Maps</a></p>
-  <p>Goodwin’s Court, minuscule ruelle pavée bordée de maisons du XVIIᵉ siècle, aurait inspiré le Chemin de Traverse.  
-  De nuit, le charme est encore plus envoûtant avec ses lanternes noires suspendues au-dessus de la rue.</p>
+  <p>Cette discrète ruelle pavée bordée de façades anciennes aurait inspiré J.K. Rowling pour créer le Chemin de Traverse.  
+  De nuit, Goodwin’s Court est particulièrement envoûtante avec ses vieilles lanternes suspendues.</p>
   <div class="devinette">
-    <p><strong>Devinette :</strong> Quelle ruelle cachée aurait inspiré le Chemin de Traverse ?</p>
+    <p><strong>Devinette :</strong> Quelle ruelle cachée rappelle le Chemin de Traverse dans Harry Potter ?</p>
     <button onclick="document.getElementById('reponse-goodwins').style.display='block'">Révéler la réponse</button>
     <p id="reponse-goodwins" style="display:none; color:#a87d2d;">Goodwin’s Court</p>
   </div>
@@ -132,16 +130,15 @@
     <a href="#lieu-7">→ Lieu suivant</a>
   </div>
 </section>
-
 <section id="lieu-7">
   <h2>King’s Cross Station – Voie 9¾</h2>
   <img src="images/kings_cross.jpg" alt="King's Cross Station">
   <p><strong>Accès :</strong> Métro King's Cross St Pancras Station.</p>
   <p><a href="https://maps.app.goo.gl/1EvttzN6qxRCePvC7" target="_blank">Voir sur Google Maps</a></p>
-  <p>Célèbre dans l'univers d'Harry Potter, King's Cross Station est le point de départ du Poudlard Express.  
-  Retrouvez la réplique du chariot magique encastré dans le mur pour une photo souvenir !</p>
+  <p>King’s Cross est l’une des gares les plus célèbres du monde grâce à Harry Potter.  
+  Retrouvez le chariot magique à moitié encastré dans le mur pour accéder à la voie 9¾, où part le mythique Poudlard Express !</p>
   <div class="devinette">
-    <p><strong>Devinette :</strong> Quel est le numéro du quai magique pour accéder au Poudlard Express ?</p>
+    <p><strong>Devinette :</strong> Quel quai magique permet d'atteindre le Poudlard Express ?</p>
     <button onclick="document.getElementById('reponse-kingcross').style.display='block'">Révéler la réponse</button>
     <p id="reponse-kingcross" style="display:none; color:#a87d2d;">9¾</p>
   </div>
@@ -157,13 +154,13 @@
 <section id="lieu-8">
   <h2>St Pancras International</h2>
   <img src="images/st_pancras.jpg" alt="St Pancras International">
-  <p><strong>Accès :</strong> À pied depuis King's Cross Station (1 minute).</p>
+  <p><strong>Accès :</strong> Traverser la rue depuis King's Cross Station (1 minute à pied).</p>
   <p><a href="https://maps.app.goo.gl/53VTHtxTSucKumBv7" target="_blank">Voir sur Google Maps</a></p>
-  <p>St Pancras International, joyau de l’architecture victorienne, apparaît dans "La Chambre des Secrets".  
-  C’est de là que Harry et Ron s'envolent en voiture magique après avoir raté le Poudlard Express !  
-  Une façade majestueuse en briques rouges et un hall magnifique.</p>
+  <p>Chef-d’œuvre de l’architecture gothique victorienne, St Pancras International apparaît dans "La Chambre des Secrets",  
+  quand Harry et Ron s’envolent en voiture magique après avoir raté le train pour Poudlard !  
+  Sa façade spectaculaire vaut à elle seule la visite.</p>
   <div class="devinette">
-    <p><strong>Devinette :</strong> De quelle gare Harry et Ron décollent-ils en voiture volante dans "La Chambre des Secrets" ?</p>
+    <p><strong>Devinette :</strong> De quelle gare Harry et Ron décollent-ils en voiture volante ?</p>
     <button onclick="document.getElementById('reponse-stpancras').style.display='block'">Révéler la réponse</button>
     <p id="reponse-stpancras" style="display:none; color:#a87d2d;">St Pancras International</p>
   </div>
@@ -175,29 +172,29 @@
     <a href="#lieu-9">→ Lieu suivant</a>
   </div>
 </section>
+
 <section id="lieu-9">
   <h2>Camden Market</h2>
   <img src="images/camden_market.jpg" alt="Camden Market">
   <p><strong>Accès :</strong> Métro Camden Town Station (Northern Line).</p>
   <p><a href="https://maps.app.goo.gl/kYV7LXLGvqwHk7yR6" target="_blank">Voir sur Google Maps</a></p>
-  <p>Camden est un quartier alternatif célèbre pour ses marchés éclectiques, ses boutiques vintage et son ambiance excentrique.  
-  Flânez au bord du canal, goûtez à la street food internationale et imprégnez-vous de l'atmosphère unique de ce lieu emblématique.</p>
+  <p>Camden Market est célèbre pour ses stands originaux, ses produits vintage et ses cuisines du monde entier.  
+  Une balade incontournable dans un univers décalé et vibrant.</p>
   <div class="navigation-buttons">
     <a href="#lieu-8">← Lieu précédent</a>
     <a href="#lieu-10">→ Lieu suivant</a>
   </div>
 </section>
-
 <section id="lieu-10">
   <h2>Piccadilly Circus</h2>
   <img src="images/piccadilly.jpg" alt="Piccadilly Circus">
-  <p><strong>Accès :</strong> Métro Piccadilly Circus Station (Piccadilly Line ou Bakerloo Line).</p>
+  <p><strong>Accès :</strong> Métro Piccadilly Circus Station (Bakerloo Line ou Piccadilly Line).</p>
   <p><a href="https://maps.app.goo.gl/Rqsyo6KzgW5zW7LE8" target="_blank">Voir sur Google Maps</a></p>
-  <p>Symbole vibrant de Londres, Piccadilly Circus est célèbre pour ses écrans lumineux et sa statue d'Éros.  
-  Dans "Harry Potter et les Reliques de la Mort", Harry, Hermione et Ron apparaissent ici juste après leur fuite du mariage de Bill et Fleur.  
-  Le lieu est particulièrement magique la nuit sous les lumières éclatantes.</p>
+  <p>Lieu emblématique illuminé par ses écrans géants.  
+  Dans "Harry Potter et les Reliques de la Mort", Harry, Ron et Hermione se retrouvent ici après avoir fui les Mangemorts lors du mariage de Bill et Fleur.  
+  Piccadilly vibre de jour comme de nuit !</p>
   <div class="devinette">
-    <p><strong>Devinette :</strong> Dans quelle célèbre place londonienne Harry, Hermione et Ron atterrissent-ils après avoir fui le mariage ?</p>
+    <p><strong>Devinette :</strong> Dans quelle place mythique Harry, Ron et Hermione atterrissent-ils après avoir fui un mariage ?</p>
     <button onclick="document.getElementById('reponse-piccadilly').style.display='block'">Révéler la réponse</button>
     <p id="reponse-piccadilly" style="display:none; color:#a87d2d;">Piccadilly Circus</p>
   </div>
@@ -209,14 +206,15 @@
     <a href="#lieu-11">→ Lieu suivant</a>
   </div>
 </section>
+
 <section id="lieu-11">
   <h2>Dîner au Sky Garden ou Dishoom</h2>
   <img src="images/sky_garden.jpg" alt="Sky Garden Londres">
   <p><strong>Accès :</strong> Métro Monument Station (Circle Line, District Line) ou Tower Hill Station.</p>
   <p><a href="https://maps.app.goo.gl/5LwU7qKgghAE2dQb6" target="_blank">Voir sur Google Maps</a></p>
-  <p>Pour terminer votre journée magique, vous avez deux magnifiques options :  
-  - Profitez d'une vue exceptionnelle sur Londres en montant au Sky Garden, les jardins suspendus situés au sommet d'un gratte-ciel,  
-  - Ou dînez dans l’ambiance chaleureuse du célèbre restaurant indien Dishoom, réputé pour son cadre authentique et sa cuisine raffinée.</p>
+  <p>Pour clore cette journée magique, deux options :  
+  - Sky Garden : profitez d’une vue panoramique sur Londres depuis des jardins suspendus spectaculaires,  
+  - Dishoom : savourez un délicieux dîner indien dans une ambiance inspirée des cafés de Bombay.</p>
   <div class="navigation-buttons">
     <a href="#lieu-10">← Lieu précédent</a>
     <a href="#top">↑ Haut de page</a>
