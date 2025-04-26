@@ -1,16 +1,15 @@
+
 <!DOCTYPE html>
+
 <html lang="fr">
- <head>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <meta charset="utf-8"/>
-  <title>
-   Dimanche magique – Oxford &amp; Harry Potter Studios
-  </title>
-  <style>
-   body {
+<head><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8"/>
+<title>Dimanche magique – Oxford &amp; Harry Potter Studios</title>
+<style>
+    body {
       background-color: #000;
       color: #FFD700;
-      
+      font-family: 'Georgia', serif;
       margin: 0;
       padding: 60px 20px 40px;
     }
@@ -112,15 +111,135 @@
       to { opacity: 1; transform: translateY(0); }
     }
   
-nav, h1, h2 {
+/* Texte descriptif en doré */
+.section p {
+  color: #a87d2d;
+}
+
+/* Texte trajet en jaune clair et italique */
+.section p.trajet {
+  color: #fff3b2;
+  font-style: italic;
+}
+
+/* Transition en gris clair et italique */
+.section p.transition {
+  color: #ccc;
+  font-style: italic;
+}
+
+/* Liens centrés */
+.section a.link-centered {
+  color: #fff3b2;
+  text-decoration: underline;
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+}
+
+/* Boutons */
+.nav-link {
+  font-family: 'IM Fell English SC', serif;
+  background: #a87d2d;
+  border: 1px solid #8a6726;
+  border-radius: 6px;
+  color: #000 !important;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.nav-link:hover {
+  background: #8a6726;
+  border-color: #000;
+}
+
+/* Menu */
+nav {
+  display: flex;
+  gap: 20px;
+  font-size: 1em;
+  margin-bottom: 30px;
+  justify-content: center;
+  margin-top: 20px;
   font-family: 'IM Fell English SC', serif;
 }
-  </style>
-  <style>
-   body {
+nav a {
+  color: #FFD700;
+  text-decoration: none;
+  font-family: 'IM Fell English SC', serif;
+}
+
+/* Mise en page générale */
+.section p {
+  color: #a87d2d;
+}
+.section p.trajet {
+  color: #fff3b2;
+  font-style: italic;
+}
+.section p.transition {
+  color: #ccc;
+  font-style: italic;
+}
+.section a.link-centered {
+  color: #fff3b2;
+  text-decoration: underline;
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+}
+
+/* Boutons style */
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.nav-link {
+  font-family: 'IM Fell English SC', serif;
+  background: #a87d2d;
+  border: 1px solid #8a6726;
+  border-radius: 6px;
+  color: #000 !important;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 14px 24px;
+  width: 85%;
+  max-width: 300px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.nav-link:hover {
+  background: #8a6726;
+  border-color: #000;
+}
+
+/* Menu en haut */
+nav {
+  display: flex;
+  gap: 20px;
+  font-size: 1em;
+  margin-bottom: 30px;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: 'IM Fell English SC', serif;
+}
+nav a {
+  color: #FFD700;
+  text-decoration: none;
+  font-family: 'IM Fell English SC', serif;
+}
+</style><style>
+body {
   margin: 0;
   padding: 0;
-  
+  font-family: 'Segoe UI', sans-serif;
 }
 .section {
   padding: 20px;
@@ -174,159 +293,67 @@ a {
     gap: 8px;
   }
 }
-
-nav, h1, h2 {
-  font-family: 'IM Fell English SC', serif;
-}
-  </style>
-  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&amp;display=swap" rel="stylesheet"/>
- </head>
- <body>
-  <nav style="display: flex; gap: 20px; font-size: 0.95em; margin-bottom: 30px; justify-content: flex-start;">
-   <a href="index.html" style="color: #FFD700; text-decoration: none;">
-    Accueil
-   </a>
-   <a href="planning.html" style="color: #FFD700; text-decoration: none;">
-    Planning
-   </a>
-   <a href="carte_londres.html" style="color: #FFD700; text-decoration: none;">
-    Carte
-   </a>
-   <a href="carte_metro.html" style="color: #FFD700; text-decoration: none;">
-    Métro
-   </a>
-  </nav>
-  <h1>
-   Dimanche 20 avril – D’Oxford aux coulisses de la magie
-  </h1>
-  <div class="section active">
-   <h2>
-    Matin – Oxford, la ville des sorciers
-   </h2>
-   <img alt="Oxford" class="lieu-img" src="images/oxford.jpg"/>
-   <p style="color: #fff3b2; font-style: italic; margin-bottom: 12px;">
-    <strong>
-     Trajet :
-    </strong>
-    Départ à
-    <strong>
-     07h30
-    </strong>
-    depuis Gloucester Road Station (ligne Piccadilly). Bus direct jusqu’à Oxford. Trajet d’environ
-    <strong>
-     1h45
-    </strong>
-    .
-   </p>
-   <p style="text-align:center; margin: -10px 0 20px;">
-    <a href="https://www.google.com/maps/dir/15-28+Eyre+Street+Hill,+London+EC1R+5EW/Gloucester+Road+Station,+London/@51.5122838,-0.1551446,13z/data=!3m1!5s0x48760535f9dba28d:0x8081c1f2f3edb65e!4m14!4m13!1m5!1m1!1s0x48761b511f78769d:0x74b85d0840cd9b6e!2m2!1d-0.1099582!2d51.5224592!1m5!1m1!1s0x48760535f9dba28d:0x8081c1f2f3edb65e!2m2!1d-0.1830966!2d51.494426!3e2" style="color:#FFD700; font-style:italic; text-decoration:underline;" target="_blank">
-     → Itinéraire Google Maps à pied
-    </a>
-   </p>
-   <p>
-    Laissez-vous charmer par les ruelles pavées, les grandes tours gothiques et les collèges historiques d’
-    <strong>
-     Oxford
-    </strong>
-    , où plusieurs scènes d’Harry Potter ont été tournées.
-   </p>
-   <p>
-    Ne manquez pas la
-    <strong>
-     Bodleian Library
-    </strong>
-    , le
-    <strong>
-     Christ Church College
-    </strong>
-    et la grande salle qui a inspiré celle de Poudlard !
-   </p>
-   <iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/Y4vNBBmX4aE" title="Oxford - lieux de tournage Harry Potter">
-   </iframe>
-   <p class="transition">
-    Après cette matinée studieuse, direction les studios où la magie prend vie...
-   </p>
-   <button class="btn-magique next">
-    <div class="next-container">
-     <img alt="Sorcier" src="images/sorcier-dore.png"/>
-     <span>
-      → Lieu suivant
-     </span>
-    </div>
-   </button>
-  </div>
-  <div class="section">
-   <h2>
-    Après-midi – Warner Bros. Studio Tour
-   </h2>
-   <img alt="Warner Bros. Studio Tour" class="lieu-img" src="images/harry_potter_studio.jpg"/>
-   <p style="color: #fff3b2; font-style: italic; margin-bottom: 12px;">
-    <strong>
-     Trajet :
-    </strong>
-    Depuis Oxford, un bus vous emmène directement au studio (trajet organisé).
-   </p>
-   <p>
-    Bienvenue dans les coulisses des films
-    <strong>
-     Harry Potter
-    </strong>
-    ! Costumes, décors, objets magiques, baguettes, Chemin de Traverse,
+</style><link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&amp;display=swap" rel="stylesheet"/></head>
+<body>
+<nav style="display: flex; gap: 20px; font-size: 0.95em; margin-bottom: 30px; justify-content: flex-start;">
+<a href="index.html">Accueil</a>
+<a href="planning.html">Planning</a>
+<a href="carte_londres.html">Carte</a>
+<a href="carte_metro.html">Métro</a>
+</nav>
+<h1>Dimanche 20 avril – D’Oxford aux coulisses de la magie</h1>
+<div class="section active">
+<h2>Matin – Oxford, la ville des sorciers</h2>
+<img alt="Oxford" class="lieu-img" src="images/oxford.jpg"/>
+<p class="trajet"><strong>Trajet :</strong> Départ à <strong>07h30</strong> depuis Gloucester Road Station (ligne Piccadilly). Bus direct jusqu’à Oxford. Trajet d’environ <strong>1h45</strong>.</p><p><a class="link-centered" href="https://www.google.com/maps/dir/15-28+Eyre+Street+Hill,+London+EC1R+5EW/Gloucester+Road+Station,+London/@51.5122838,-0.1551446,13z/data=!3m1!5s0x48760535f9dba28d:0x8081c1f2f3edb65e!4m14!4m13!1m5!1m1!1s0x48761b511f78769d:0x74b85d0840cd9b6e!2m2!1d-0.1099582!2d51.5224592!1m5!1m1!1s0x48760535f9dba28d:0x8081c1f2f3edb65e!2m2!1d-0.1830966!2d51.494426!3e2" target="_blank">→ Itinéraire Google Maps à pied</a></p>
+<p>
+      Laissez-vous charmer par les ruelles pavées, les grandes tours gothiques et les collèges historiques d’<strong>Oxford</strong>, où plusieurs scènes d’Harry Potter ont été tournées.
+    </p>
+<p>
+      Ne manquez pas la <strong>Bodleian Library</strong>, le <strong>Christ Church College</strong> et la grande salle qui a inspiré celle de Poudlard !
+    </p>
+<iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/Y4vNBBmX4aE" title="Oxford - lieux de tournage Harry Potter"></iframe>
+<p class="transition">Après cette matinée studieuse, direction les studios où la magie prend vie...</p>
+<div class="nav-buttons"><a class="nav-link next-link" href="#">Lieu suivant</a><a class="nav-link previous-link" href="#">Lieu précédent</a><a class="nav-link" href="index.html">Retour à l’accueil</a></div></div>
+<div class="section">
+<h2>Après-midi – Warner Bros. Studio Tour</h2>
+<img alt="Warner Bros. Studio Tour" class="lieu-img" src="images/harry_potter_studio.jpg"/>
+<p class="trajet"><strong>Trajet :</strong> Depuis Oxford, un bus vous emmène directement au studio (trajet organisé).</p>
+<p>
+    Bienvenue dans les coulisses des films <strong>Harry Potter</strong> ! Costumes, décors, objets magiques, baguettes, Chemin de Traverse,
     et bien sûr la Grande Salle de Poudlard vous y attendent.
-   </p>
-   <p>
+  </p>
+<p>
     Préparez-vous à vivre une immersion totale dans le monde des sorciers, avec des effets spéciaux, du Quidditch et une reconstitution fidèle des scènes cultes.
-   </p>
-   <p class="transition">
-    Après cette visite inoubliable, retour à Londres avec des étoiles (et de la magie) plein les yeux.
-   </p>
-   <button class="btn-magique previous" style="position: absolute; left: 0; bottom: -80px;">
-    <div class="next-container">
-     <img alt="Sorcier" src="images/sorcier-dore.png"/>
-     <span>
-      ← Lieu précédent
-     </span>
-    </div>
-   </button>
-   <button class="btn-magique previous" style="position: absolute; left: 0; bottom: -80px;">
-    <div class="next-container">
-     <img alt="Sorcier" src="images/sorcier-dore.png"/>
-     <span>
-      ← Lieu précédent
-     </span>
-    </div>
-   </button>
-  </div>
-  <a class="btn-retour" href="index.html">
-   ← Retour à l’accueil
-  </a>
-  <div class="footer">
-   <img alt="Illustration dorée" src="images/image-doree-londres.png"/>
-  </div>
-  <script>
-   const sections = document.querySelectorAll('.section');
-
-    document.querySelectorAll('.btn-magique.next').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const currentSection = btn.closest('.section');
-        const nextSection = currentSection.nextElementSibling;
-        if (nextSection && nextSection.classList.contains('section')) {
-          nextSection.classList.add('active');
-          nextSection.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-    });
-
-    document.querySelectorAll('.btn-magique.previous').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const currentSection = btn.closest('.section');
-        const prevSection = currentSection.previousElementSibling;
-        if (prevSection && prevSection.classList.contains('section')) {
-          prevSection.classList.add('active');
-          prevSection.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-    });
-  </script>
- </body>
+  </p>
+<p class="transition">Après cette visite inoubliable, retour à Londres avec des étoiles (et de la magie) plein les yeux.</p>
+<div class="nav-buttons"><a class="nav-link next-link" href="#">Lieu suivant</a><a class="nav-link previous-link" href="#">Lieu précédent</a><a class="nav-link" href="index.html">Retour à l’accueil</a></div></div>
+<div class="footer">
+<img alt="Illustration dorée" src="images/image-doree-londres.png"/>
+</div>
+<script>
+const sections = document.querySelectorAll('.section');
+document.querySelectorAll('.next-link').forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const current = btn.closest('.section');
+    const next = current.nextElementSibling;
+    if (next && next.classList.contains('section')) {
+      next.classList.add('active');
+      next.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+document.querySelectorAll('.previous-link').forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const current = btn.closest('.section');
+    const prev = current.previousElementSibling;
+    if (prev && prev.classList.contains('section')) {
+      prev.classList.add('active');
+      prev.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+</script></body>
 </html>
