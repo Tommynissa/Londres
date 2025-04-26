@@ -241,6 +241,35 @@ nav a {
   text-decoration: none;
   font-family: 'IM Fell English SC', serif;
 }
+
+/* Mise en page boutons harmonisée */
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.nav-link {
+  font-family: 'IM Fell English SC', serif;
+  background: #a87d2d;
+  border: 1px solid #8a6726;
+  border-radius: 6px;
+  color: #000 !important;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 14px 24px;
+  width: 85%;
+  max-width: 300px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.nav-link:hover {
+  background: #8a6726;
+  border-color: #000;
+}
 </style><style>
 body {
   margin: 0;
@@ -326,7 +355,7 @@ a {
     Idéal pour commencer la journée en douceur et admirer les principaux monuments de Londres sous un autre angle.
   </p>
 <p class="transition">Vous quittez les hauteurs vitrées du Sky Garden pour marcher jusqu’à Tower Bridge, tout proche.</p>
-<div class="nav-buttons"><a class="nav-link next-link link-centered" href="#">Lieu suivant</a><a class="nav-link previous-link link-centered" href="#">Lieu précédent</a><a class="nav-link link-centered" href="index.html">Retour à l’accueil</a></div></div>
+<div class="nav-buttons"><a class="nav-link next-link" href="#">Lieu suivant</a><a class="nav-link previous-link" href="#">Lieu précédent</a><a class="nav-link" href="index.html">Retour à l’accueil</a></div></div>
 <div class="section">
 <h2>10h15 – Tower Bridge</h2>
 <img alt="Tower Bridge" class="lieu-img" src="images/tower_bridge.jpg"/>
@@ -340,7 +369,7 @@ a {
     C’est un passage incontournable, et un décor parfait pour quelques photos souvenirs.
   </p>
 <p class="transition">Vous longez maintenant la Tamise jusqu’à la célèbre Tour de Londres...</p>
-<div class="nav-buttons"><a class="nav-link next-link link-centered" href="#">Lieu suivant</a><a class="nav-link previous-link link-centered" href="#">Lieu précédent</a><a class="nav-link link-centered" href="index.html">Retour à l’accueil</a></div></div>
+<div class="nav-buttons"><a class="nav-link next-link" href="#">Lieu suivant</a><a class="nav-link previous-link" href="#">Lieu précédent</a><a class="nav-link" href="index.html">Retour à l’accueil</a></div></div>
 <div class="section">
 <h2>10h30 – Tour de Londres</h2>
 <img alt="Tour de Londres" class="lieu-img" src="images/tour_londres.jpg"/>
@@ -354,7 +383,7 @@ a {
     Si vous ne la visitez pas en intérieur, la promenade autour des remparts suffit à en ressentir toute la puissance.
   </p>
 <p class="transition">Direction Buckingham Palace pour assister à la relève de la garde royale !</p>
-<div class="nav-buttons"><a class="nav-link next-link link-centered" href="#">Lieu suivant</a><a class="nav-link previous-link link-centered" href="#">Lieu précédent</a><a class="nav-link link-centered" href="index.html">Retour à l’accueil</a></div></div>
+<div class="nav-buttons"><a class="nav-link next-link" href="#">Lieu suivant</a><a class="nav-link previous-link" href="#">Lieu précédent</a><a class="nav-link" href="index.html">Retour à l’accueil</a></div></div>
 <div class="section">
 <h2>11h00 – Relève de la Garde à Buckingham Palace</h2>
 <img alt="Buckingham Palace" class="lieu-img" src="images/buckingham.jpg"/>
@@ -368,7 +397,7 @@ a {
     La cérémonie dure jusqu’à 11h45 environ, dans une ambiance solennelle mais spectaculaire.
   </p>
 <p class="transition">Une fois les trompettes apaisées, entrez dans la verdure de St. James’s Park, juste en face...</p>
-<div class="nav-buttons"><a class="nav-link next-link link-centered" href="#">Lieu suivant</a><a class="nav-link previous-link link-centered" href="#">Lieu précédent</a><a class="nav-link link-centered" href="index.html">Retour à l’accueil</a></div></div>
+<div class="nav-buttons"><a class="nav-link next-link" href="#">Lieu suivant</a><a class="nav-link previous-link" href="#">Lieu précédent</a><a class="nav-link" href="index.html">Retour à l’accueil</a></div></div>
 <div class="section">
 <h2>11h45 – St. James’s Park</h2>
 <img alt="St. James’s Park" class="lieu-img" src="images/st_james_park.jpg"/>
@@ -382,7 +411,7 @@ a {
     Depuis certains bancs, la vue sur le palais ou sur la London Eye est imprenable.
   </p>
 <p class="transition">En sortant du parc, vous arrivez directement devant Big Ben et le Palais de Westminster...</p>
-<div class="nav-buttons"><a class="nav-link next-link link-centered" href="#">Lieu suivant</a><a class="nav-link previous-link link-centered" href="#">Lieu précédent</a><a class="nav-link link-centered" href="index.html">Retour à l’accueil</a></div></div>
+<div class="nav-buttons"><a class="nav-link next-link" href="#">Lieu suivant</a><a class="nav-link previous-link" href="#">Lieu précédent</a><a class="nav-link" href="index.html">Retour à l’accueil</a></div></div>
 <div class="section">
 <h2>12h15 – Big Ben &amp; Palais de Westminster</h2>
 <img alt="Big Ben et Palais de Westminster" class="lieu-img" src="images/big_ben.jpg"/>
@@ -395,7 +424,7 @@ a {
     C’est l’un des plus beaux points de vue de la ville.
   </p>
 <p class="transition">Traversez maintenant la place pour vous approcher de l’Abbaye de Westminster...</p>
-<div class="nav-buttons"><a class="nav-link next-link link-centered" href="#">Lieu suivant</a><a class="nav-link previous-link link-centered" href="#">Lieu précédent</a><a class="nav-link link-centered" href="index.html">Retour à l’accueil</a></div></div>
+<div class="nav-buttons"><a class="nav-link next-link" href="#">Lieu suivant</a><a class="nav-link previous-link" href="#">Lieu précédent</a><a class="nav-link" href="index.html">Retour à l’accueil</a></div></div>
 <div class="section">
 <h2>12h30 – Westminster Abbey</h2>
 <img alt="Westminster Abbey" class="lieu-img" src="images/westminster_abbey.jpg"/>
@@ -409,7 +438,7 @@ a {
     C’est un lieu chargé d’histoire et d’émotion.
   </p>
 <p class="transition">Un petit creux ? On fait une pause déjeuner dans les environs avant de reprendre la balade...</p>
-<div class="nav-buttons"><a class="nav-link next-link link-centered" href="#">Lieu suivant</a><a class="nav-link previous-link link-centered" href="#">Lieu précédent</a><a class="nav-link link-centered" href="index.html">Retour à l’accueil</a></div></div>
+<div class="nav-buttons"><a class="nav-link next-link" href="#">Lieu suivant</a><a class="nav-link previous-link" href="#">Lieu précédent</a><a class="nav-link" href="index.html">Retour à l’accueil</a></div></div>
 <div class="section">
 <h2>13h00 – Pause déjeuner</h2>
 <img alt="Pause déjeuner à Londres" class="lieu-img" src="images/restaurant.jpg"/>
@@ -426,7 +455,7 @@ a {
     Selon votre humeur, optez pour un repas assis ou un snack à emporter le long de la Tamise avant d’embarquer pour la croisière.
   </p>
 <p class="transition">Direction le London Eye Pier pour embarquer à bord de l'Uber Boat en direction de Greenwich...</p>
-<div class="nav-buttons"><a class="nav-link next-link link-centered" href="#">Lieu suivant</a><a class="nav-link previous-link link-centered" href="#">Lieu précédent</a><a class="nav-link link-centered" href="index.html">Retour à l’accueil</a></div></div>
+<div class="nav-buttons"><a class="nav-link next-link" href="#">Lieu suivant</a><a class="nav-link previous-link" href="#">Lieu précédent</a><a class="nav-link" href="index.html">Retour à l’accueil</a></div></div>
 <div class="section">
 <h2>14h00 – Croisière en Uber Boat vers Greenwich</h2>
 <img alt="Croisière sur la Tamise" class="lieu-img" src="images/uber_boat.jpg"/>
@@ -439,7 +468,7 @@ a {
     Le trajet jusqu’à Greenwich dure environ <strong>35 minutes</strong>, parfait pour se reposer tout en profitant d’un panorama exceptionnel sur la ville.
   </p>
 <p class="transition">À Greenwich, vous pourrez découvrir l’Observatoire, le Cutty Sark et bien d’autres merveilles... ou simplement revenir tranquillement à l’hôtel.</p>
-<div class="nav-buttons"><a class="nav-link next-link link-centered" href="#">Lieu suivant</a><a class="nav-link previous-link link-centered" href="#">Lieu précédent</a><a class="nav-link link-centered" href="index.html">Retour à l’accueil</a></div></div>
+<div class="nav-buttons"><a class="nav-link next-link" href="#">Lieu suivant</a><a class="nav-link previous-link" href="#">Lieu précédent</a><a class="nav-link" href="index.html">Retour à l’accueil</a></div></div>
 <div class="section">
 <h2>15h30 – Retour à l’hôtel &amp; fin de journée</h2>
 <img alt="Retour à l'hôtel" class="lieu-img" src="images/hotel.jpg"/>
@@ -449,7 +478,7 @@ a {
     c’est le moment de rentrer à l’hôtel pour vous reposer, faire vos valises… ou prolonger la magie avec un dernier dîner.
   </p>
 <p class="transition">Le lendemain matin, direction l’aéroport de Gatwick en reprenant le Thameslink depuis Farringdon Station !</p>
-<div class="nav-buttons"><a class="nav-link next-link link-centered" href="#">Lieu suivant</a><a class="nav-link previous-link link-centered" href="#">Lieu précédent</a><a class="nav-link link-centered" href="index.html">Retour à l’accueil</a></div></div>
+<div class="nav-buttons"><a class="nav-link next-link" href="#">Lieu suivant</a><a class="nav-link previous-link" href="#">Lieu précédent</a><a class="nav-link" href="index.html">Retour à l’accueil</a></div></div>
 <div class="footer">
 <img alt="Illustration dorée" src="images/image-doree-londres.png"/>
 </div>
