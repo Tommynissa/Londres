@@ -303,26 +303,29 @@ La cathédrale Saint-Paul est un chef-d'œuvre baroque célèbre pour son immens
   </p><p class="devinette">
     Quelle voie secrète permet aux sorciers de rejoindre le Poudlard Express ?
   </p><button class="btn" onclick="this.nextElementSibling.style.display='block'">→ Réponse</button><p class="reponse">La voie 9¾ bien sûr !</p><iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/6zXDo4dL7SU" title="Voie 9¾ - Harry Potter"></iframe><p class="transition">Ensuite, direction Camden pour un après-midi plus alternatif… mais tout aussi magique.</p><div class="nav-buttons"><a class="nav-link next-link" href="#">Lieu suivant</a><a class="nav-link previous-link" href="#">Lieu précédent</a><a class="nav-link" href="index.html">Retour à l’accueil</a></div></div>
-<div class="section" id="lieu-7b">
-<h2>14h50 – Gare de St Pancras</h2>
-<img alt="Gare de St Pancras" class="lieu-img" src="images/stpancras.jpg"/>
-<p class="trajet">Accès : Depuis King’s Cross Station, marchez 2 minutes jusqu’à l'entrée principale de la gare St Pancras Renaissance Hotel.</p>
-<p style="text-align:center;">
-<a class="link-centered" href="https://www.google.com/maps/dir/King's+Cross+Station/St+Pancras+Renaissance+Hotel" target="_blank">→ Itinéraire Google Maps à pied</a>
-</p>
-<p>
+  
+  
+  <div class="section" id="lieu-7b">
+  <h2>14h50 – Gare de St Pancras</h2>
+  <img alt="Gare de St Pancras" class="lieu-img" src="images/stpancras.jpg"/>
+  <p class="trajet">Accès : Depuis King’s Cross Station, marchez 2 minutes jusqu’à l'entrée principale de la gare St Pancras Renaissance Hotel.</p>
+  <p style="text-align:center;">
+    <a class="link-centered" href="https://www.google.com/maps/dir/King's+Cross+Station/St+Pancras+Renaissance+Hotel" target="_blank">→ Itinéraire Google Maps à pied</a>
+  </p>
+  <p>
     La majestueuse <strong>Gare de St Pancras</strong> est un chef-d'œuvre néogothique, avec ses façades de briques rouges et sa grande horloge emblématique.
     C’est ici, devant l'entrée de l’hôtel St Pancras Renaissance, que Ron et Harry décollent avec la <strong>Ford Anglia volante</strong> dans <em>Harry Potter et la Chambre des Secrets</em> !
   </p>
-<p>
+  <p>
     Un lieu iconique où la magie semble littéralement prendre son envol au-dessus des toits de Londres...
   </p>
-<p class="transition">Après cette escale magique, vous prenez la Northern Line direction nord pour rejoindre l’excentrique Camden Market...</p>
-<div class="nav-buttons">
-<a class="nav-link next-link" href="#">Lieu suivant</a>
-<a class="nav-link previous-link" href="#">Lieu précédent</a>
-<a class="nav-link" href="index.html">Retour à l’accueil</a>
-</div>
+  <p class="transition">Après cette escale magique, vous prenez la Northern Line direction nord pour rejoindre l’excentrique Camden Market...</p>
+
+  <div class="nav-buttons">
+    <a href="#" class="nav-link next-link">Lieu suivant</a>
+    <a href="#" class="nav-link previous-link">Lieu précédent</a>
+    <a href="index.html" class="nav-link">Retour à l’accueil</a>
+  </div>
 </div><div class="section" id="lieu-8"><h2>15h30 – Camden Market</h2><img alt="Camden Market" class="lieu-img" src="images/camden_market.jpg"/><p class="trajet">Accès : Depuis King’s Cross, prenez la Northern Line direction Nord. Descendez à Camden Town. Marchez 5 minutes jusqu’aux stands principaux du marché. Trajet métro + marche : 10 minutes.</p><p><a class="link-centered" href="https://www.google.com/maps/dir/King's+Cross+Station/Camden+Market" target="_blank">→ Itinéraire Google Maps à pied</a></p><p>
     Bienvenue à <strong>Camden</strong>, le quartier alternatif de Londres, où se croisent punks, artistes de rue, boutiques gothiques, stands de street food et mode excentrique.
     Les bâtiments sont recouverts de sculptures géantes, les vitrines débordent de créations étranges, et l’ambiance y est unique.
@@ -333,49 +336,53 @@ La cathédrale Saint-Paul est un chef-d'œuvre baroque célèbre pour son immens
   </p><p class="devinette">
     Quel quartier excentrique et coloré de Londres pourrait facilement accueillir une boutique de magie ?
   </p><button class="btn" onclick="this.nextElementSibling.style.display='block'">→ Réponse</button><p class="reponse">Camden Market, bien sûr ! L’endroit rêvé pour croiser des objets ensorcelés…</p><iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/M9LtUXlFijg" title="Ambiance Camden Market"></iframe><p class="transition">Vous quittez cet univers décalé pour revenir vers le cœur animé de Londres…</p><div class="nav-buttons"><a class="nav-link next-link" href="#">Lieu suivant</a><a class="nav-link previous-link" href="#">Lieu précédent</a><a class="nav-link" href="index.html">Retour à l’accueil</a></div></div>
-<!-- NOUVELLES SECTIONS AJOUTÉES À PARTIR DE 16h30 -->
+  <!-- NOUVELLES SECTIONS AJOUTÉES À PARTIR DE 16h30 -->
+
 <div class="section" id="lieu-8b">
-<h2>16h30 – Chinatown</h2>
-<img alt="Chinatown Londres" class="lieu-img" src="images/chinatown.jpg"/>
-<p class="trajet">Accès : Depuis Camden Town, prenez la Northern Line direction sud et descendez à Leicester Square. Chinatown est à 2 minutes à pied derrière la station.</p>
-<p style="text-align:center;">
-<a class="link-centered" href="https://www.google.com/maps/dir/Camden+Town/Chinatown+London" target="_blank">→ Itinéraire Google Maps à pied</a>
-</p>
-<p>
+  <h2>16h30 – Chinatown</h2>
+  <img alt="Chinatown Londres" class="lieu-img" src="images/chinatown.jpg"/>
+  <p class="trajet">Accès : Depuis Camden Town, prenez la Northern Line direction sud et descendez à Leicester Square. Chinatown est à 2 minutes à pied derrière la station.</p>
+  <p style="text-align:center;">
+    <a class="link-centered" href="https://www.google.com/maps/dir/Camden+Town/Chinatown+London" target="_blank">→ Itinéraire Google Maps à pied</a>
+  </p>
+  <p>
     Bienvenue dans <strong>Chinatown</strong>, un monde coloré en plein cœur de Londres ! Entre les lanternes rouges suspendues, les enseignes dorées et les parfums exotiques, ce quartier offre un dépaysement immédiat et une explosion de saveurs et de couleurs.
   </p>
-<p>
+  <p>
     Une petite balade magique à travers les ruelles décorées, avant de continuer votre exploration londonienne vers Trafalgar Square...
   </p>
-<p class="transition">Vous traversez quelques ruelles et en 3 minutes, vous arrivez à Trafalgar Square...</p>
-<div class="nav-buttons">
-<a class="nav-link next-link" href="#">Lieu suivant</a>
-<a class="nav-link previous-link" href="#">Lieu précédent</a>
-<a class="nav-link" href="index.html">Retour à l’accueil</a>
+  <p class="transition">Vous traversez quelques ruelles et en 3 minutes, vous arrivez à Trafalgar Square...</p>
+
+  <div class="nav-buttons">
+    <a href="#" class="nav-link next-link">Lieu suivant</a>
+    <a href="#" class="nav-link previous-link">Lieu précédent</a>
+    <a href="index.html" class="nav-link">Retour à l’accueil</a>
+  </div>
 </div>
-</div>
+
 <div class="section" id="lieu-8c">
-<h2>16h50 – Trafalgar Square</h2>
-<img alt="Trafalgar Square Londres" class="lieu-img" src="images/trafalgar_square.jpg"/>
-<p class="trajet">Accès : 3 minutes de marche depuis Chinatown.</p>
-<p style="text-align:center;">
-<a class="link-centered" href="https://www.google.com/maps/dir/Chinatown+London/Trafalgar+Square" target="_blank">→ Itinéraire Google Maps à pied</a>
-</p>
-<p>
-<strong>Trafalgar Square</strong> est l'une des places les plus célèbres de Londres, dominée par la colonne de Nelson et gardée par ses célèbres lions majestueux.  
+  <h2>16h50 – Trafalgar Square</h2>
+  <img alt="Trafalgar Square Londres" class="lieu-img" src="images/trafalgar_square.jpg"/>
+  <p class="trajet">Accès : 3 minutes de marche depuis Chinatown.</p>
+  <p style="text-align:center;">
+    <a class="link-centered" href="https://www.google.com/maps/dir/Chinatown+London/Trafalgar+Square" target="_blank">→ Itinéraire Google Maps à pied</a>
+  </p>
+  <p>
+    <strong>Trafalgar Square</strong> est l'une des places les plus célèbres de Londres, dominée par la colonne de Nelson et gardée par ses célèbres lions majestueux.  
     C'est un lieu de rassemblement historique et une transition parfaite entre l'énergie de Chinatown et les lumières de Piccadilly.
   </p>
-<p>
+  <p>
     Prenez quelques instants pour admirer la National Gallery ou simplement observer la vie londonienne avant de continuer votre périple magique.
   </p>
-<p class="transition">Vous remontez tranquillement vers Piccadilly Circus, à 5 minutes de marche...</p>
-<div class="nav-buttons">
-<a class="nav-link next-link" href="#">Lieu suivant</a>
-<a class="nav-link previous-link" href="#">Lieu précédent</a>
-<a class="nav-link" href="index.html">Retour à l’accueil</a>
+  <p class="transition">Vous remontez tranquillement vers Piccadilly Circus, à 5 minutes de marche...</p>
+
+  <div class="nav-buttons">
+    <a href="#" class="nav-link next-link">Lieu suivant</a>
+    <a href="#" class="nav-link previous-link">Lieu précédent</a>
+    <a href="index.html" class="nav-link">Retour à l’accueil</a>
+  </div>
 </div>
-</div>
-<div class="section" id="lieu-9"><h2>17h00 – Piccadilly Circus &amp; rues commerçantes</h2><img alt="Piccadilly Circus" class="lieu-img" src="images/piccadilly.jpg"/><p class="trajet">Accès : Depuis Camden Town, prenez la Northern Line direction Sud. Descendez à Leicester Square puis changez pour la Piccadilly Line direction Ouest. Arrêtez-vous à Piccadilly Circus. Durée : 15 minutes.</p><p><a class="link-centered" href="https://www.google.com/maps/dir/Camden+Market/Piccadilly+Circus" target="_blank">→ Itinéraire Google Maps à pied</a></p><p>
+ <div class="section" id="lieu-9"><h2>17h00 – Piccadilly Circus &amp; rues commerçantes</h2><img alt="Piccadilly Circus" class="lieu-img" src="images/piccadilly.jpg"/><p class="trajet">Accès : Depuis Camden Town, prenez la Northern Line direction Sud. Descendez à Leicester Square puis changez pour la Piccadilly Line direction Ouest. Arrêtez-vous à Piccadilly Circus. Durée : 15 minutes.</p><p><a class="link-centered" href="https://www.google.com/maps/dir/Camden+Market/Piccadilly+Circus" target="_blank">→ Itinéraire Google Maps à pied</a></p><p>
     Cœur lumineux de Londres, <strong>Piccadilly Circus</strong> est célèbre pour ses écrans géants, ses fontaines, ses artistes de rue et l’agitation permanente.
     Dans <em>Harry Potter et les Reliques de la Mort – Partie 1</em>, c’est ici que Harry, Ron et Hermione apparaissent après s’être échappés du mariage.
   </p><p>
@@ -385,35 +392,7 @@ La cathédrale Saint-Paul est un chef-d'œuvre baroque célèbre pour son immens
     Un moment parfait pour une balade, quelques emplettes... ou un dernier clin d’œil cinématographique.
   </p><p class="devinette">
     Quel lieu de Londres, très fréquenté par les Moldus, a été traversé par Harry, Ron et Hermione en pleine fuite dans "Les Reliques de la Mort" ?
-  </p><button class="btn" onclick="this.nextElementSibling.style.display='block'">→ Réponse</button><p class="reponse">Piccadilly Circus ! Après l’attaque au mariage dans le film "Les Reliques de la Mort – Partie 1".</p><iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/_9iYzjX0F6E" title="Harry, Ron et Hermione à Piccadilly - HP7"></iframe><p class="transition">Vous terminez cette journée riche en découvertes par une pause bien méritée dans un lieu à choisir…</p><div class="nav-buttons"><a class="nav-link next-link" href="#">Lieu suivant</a><a class="nav-link previous-link" href="#">Lieu précédent</a><a class="nav-link" href="index.html">Retour à l’accueil</a></div></div>
-<div class="section" id="lieu-9b">
-<h2>17h45 – Notting Hill</h2>
-<img alt="Notting Hill Londres" class="lieu-img" src="images/nottinghill.jpg"/>
-<p class="trajet">Accès : Depuis Piccadilly Circus, prenez la Piccadilly Line direction ouest. Descendez à Notting Hill Gate. Marchez 5 minutes jusqu’à Portobello Road.</p>
-<p style="text-align:center;">
-<a class="link-centered" href="https://www.google.com/maps/dir/Piccadilly+Circus+Station/Notting+Hill+Gate+Station" target="_blank">→ Itinéraire Google Maps en métro</a>
-</p>
-<p>
-    Bienvenue à <strong>Notting Hill</strong>, l’un des quartiers les plus charmants et colorés de Londres !  
-    Connue pour ses maisons pastel, ses marchés bohèmes et son ambiance détendue, Notting Hill a été immortalisée dans le film culte <em>"Coup de foudre à Notting Hill"</em> avec Julia Roberts et Hugh Grant.
-  </p>
-<p>
-    Promenez-vous sur <strong>Portobello Road</strong> pour retrouver :
-    <ul>
-<li>La célèbre <strong>porte bleue</strong> (280 Westbourne Park Road), symbole du film,</li>
-<li>La <strong>librairie du film</strong> (142 Portobello Road), aujourd'hui boutique de souvenirs,</li>
-<li>Les façades colorées typiques de Notting Hill.</li>
-</ul>
-    Un endroit idéal pour flâner, prendre des photos… et pourquoi pas rêver d’une rencontre magique !
-  </p>
-<p class="transition">Après cette balade romantique et cinématographique, direction le dîner pour clôturer cette journée en beauté...</p>
-<div class="nav-buttons">
-<a class="nav-link next-link" href="#">Lieu suivant</a>
-<a class="nav-link previous-link" href="#">Lieu précédent</a>
-<a class="nav-link" href="index.html">Retour à l’accueil</a>
-</div>
-</div>
-<div class="section" id="lieu-10"><h2>19h30 – Pause dîner</h2><img alt="Dîner à Dishoom ou Sky Garden" class="lieu-img" src="images/diner.jpg"/><p class="trajet">Accès : Selon votre choix : marchez 15 min vers Dishoom King’s Cross ou prenez la Northern Line direction Sud depuis Camden. Pour Sky Garden, reprenez la Northern Line puis District Line jusqu’à Monument. Durée : 15 à 25 minutes.</p><p><a class="link-centered" href="https://www.google.com/maps/dir/Piccadilly+Circus/20+Fenchurch+St+or+Dishoom+King's+Cross" target="_blank">→ Itinéraire Google Maps à pied</a></p><p><strong>Option 1 – Dishoom King’s Cross</strong><br/>
+  </p><button class="btn" onclick="this.nextElementSibling.style.display='block'">→ Réponse</button><p class="reponse">Piccadilly Circus ! Après l’attaque au mariage dans le film "Les Reliques de la Mort – Partie 1".</p><iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/_9iYzjX0F6E" title="Harry, Ron et Hermione à Piccadilly - HP7"></iframe><p class="transition">Vous terminez cette journée riche en découvertes par une pause bien méritée dans un lieu à choisir…</p><div class="nav-buttons"><a class="nav-link next-link" href="#">Lieu suivant</a><a class="nav-link previous-link" href="#">Lieu précédent</a><a class="nav-link" href="index.html">Retour à l’accueil</a></div></div><div class="section" id="lieu-10"><h2>19h30 – Pause dîner</h2><img alt="Dîner à Dishoom ou Sky Garden" class="lieu-img" src="images/diner.jpg"/><p class="trajet">Accès : Selon votre choix : marchez 15 min vers Dishoom King’s Cross ou prenez la Northern Line direction Sud depuis Camden. Pour Sky Garden, reprenez la Northern Line puis District Line jusqu’à Monument. Durée : 15 à 25 minutes.</p><p><a class="link-centered" href="https://www.google.com/maps/dir/Piccadilly+Circus/20+Fenchurch+St+or+Dishoom+King's+Cross" target="_blank">→ Itinéraire Google Maps à pied</a></p><p><strong>Option 1 – Dishoom King’s Cross</strong><br/>
     Un décor inspiré des cafés de Bombay des années 40, une ambiance chaleureuse, des plats épicés et réconfortants… 
     <strong>Dishoom</strong>, situé dans un ancien entrepôt près de King’s Cross, est une véritable institution.  
     Ne manquez pas le Chicken Ruby, les naan rolls et les cocktails maison.
@@ -423,6 +402,7 @@ La cathédrale Saint-Paul est un chef-d'œuvre baroque célèbre pour son immens
   </p><p class="devinette">
     Après une journée magique à travers Londres, place à un dîner digne d’un festin de la Grande Salle… ou d’une vue spectaculaire sur la ville.
   </p><iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/mFYe3Hz5Udk" title="Ambiance Dishoom ou Sky Garden"></iframe><p class="transition">Vous retournez ensuite tranquillement à l’hôtel, la tête remplie de souvenirs enchantés…</p><div class="nav-buttons"><a class="nav-link next-link" href="#">Lieu suivant</a><a class="nav-link previous-link" href="#">Lieu précédent</a><a class="nav-link" href="index.html">Retour à l’accueil</a></div></div>
+
 <div class="footer">
 <img alt="Illustration dorée" src="images/image-doree-londres.png"/>
 </div>
