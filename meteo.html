@@ -12,23 +12,24 @@
             color: #fff3b2;
             font-family: 'IM Fell English SC', serif;
             text-align: center;
+            padding: 20px;
         }
 
         h1 {
-            margin-top: 30px;
+            margin-top: 20px;
             font-size: 3em;
         }
 
         .meteo-container {
-            margin-top: 40px;
+            margin-top: 30px;
             width: 100%;
             display: flex;
             justify-content: center;
         }
 
         .weatherwidget-wrapper {
-            width: 90%;
-            max-width: 400px;
+            width: 95%;
+            max-width: 600px;
         }
 
         .boutons {
@@ -40,22 +41,23 @@
         }
 
         .bouton {
-            padding: 12px 30px;
+            padding: 14px 28px;
             background-color: #a87d2d;
-            color: #000000;
+            color: black;
+            text-decoration: none;
             font-family: 'IM Fell English SC', serif;
             font-size: 1.5em;
             border-radius: 12px;
-            text-decoration: none;
             border: 2px solid #a87d2d;
-            transition: background-color 0.3s ease, color 0.3s ease;
-            width: 280px;
-            text-align: center;
+            transition: background 0.3s ease;
+            width: 80%;
+            max-width: 500px;
+            box-sizing: border-box;
         }
 
         .bouton:hover {
-            background-color: #ffd700;
-            color: #000000;
+            background: #8a6726;
+            color: black;
         }
 
         .footer-image {
@@ -71,7 +73,6 @@
 
     <div class="meteo-container">
         <div class="weatherwidget-wrapper">
-            <!-- Widget météo WeatherWidget.io corrigé fond transparent -->
             <a class="weatherwidget-io" href="https://forecast7.com/fr/51d51n0d13/london/" 
                data-label_1="LONDRES" 
                data-label_2="Météo" 
