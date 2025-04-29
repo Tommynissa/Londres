@@ -31,23 +31,23 @@
             background: none;
         }
 
-        .button-retour {
+        .bouton {
             display: inline-block;
             margin-top: 40px;
-            padding: 10px 30px;
-            background-color: #a87d2d;
-            color: #000000;
+            padding: 12px 30px;
+            background-color: #a87d2d; /* Fond doré chaud */
+            color: #000000; /* Texte noir */
             font-family: 'IM Fell English SC', serif;
             font-size: 1.5em;
-            border: none;
-            border-radius: 10px;
+            border-radius: 12px;
             text-decoration: none;
-            transition: background-color 0.3s ease;
+            border: 2px solid #a87d2d;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        .button-retour:hover {
-            background-color: #ffd700; /* Jaune plus clair au survol */
-            color: #000;
+        .bouton:hover {
+            background-color: #ffd700; /* Doré plus clair au survol */
+            color: #000000;
         }
     </style>
 </head>
@@ -56,11 +56,11 @@
     <h1>Météo</h1>
 
     <div class="meteo-container">
-        <!-- Exemple de widget météo OpenWeatherMap -->
+        <!-- Exemple de widget météo -->
         <iframe src="https://widget-example.com/meteo" title="Prévisions météo"></iframe>
     </div>
 
-    <a class="button-retour" href="index.html">← Retour à l'accueil</a>
+    <a class="bouton" href="index.html">← Retour à l'accueil</a>
 
 </body>
 </html>
