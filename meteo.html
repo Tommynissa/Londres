@@ -25,8 +25,8 @@
 
         iframe {
             width: 90%;
-            max-width: 400px;
-            height: 250px;
+            max-width: 600px;
+            height: 520px;
             border: none;
         }
 
@@ -69,11 +69,11 @@
     <h1>Météo</h1>
 
     <div class="meteo-container">
-        <!-- Nouveau widget météo élégant (Meteomatics / WeatherWidget.io style) -->
-        <iframe src="https://forecast7.com/en/51d51n0d13/london/" 
-                frameborder="0" 
-                scrolling="no" 
-                loading="lazy">
+        <!-- Widget Meteoblue (fonctionnel en iframe) -->
+        <iframe 
+            src="https://www.meteoblue.com/fr/meteo/widget/daily/londres_royaume-uni_2643743?geoloc=fixed&days=5&tempunit=C&windunit=KMH&layout=image" 
+            allowtransparency="true" 
+            scrolling="no">
         </iframe>
     </div>
 
