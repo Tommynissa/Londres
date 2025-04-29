@@ -21,6 +21,14 @@
 
         .meteo-container {
             margin-top: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .weatherwidget-wrapper {
+            width: 90%;
+            max-width: 400px; /* Limite sur grand écran */
         }
 
         .boutons {
@@ -62,20 +70,36 @@
     <h1>Météo</h1>
 
     <div class="meteo-container">
-        <!-- Widget météo WeatherWidget.io -->
-        <a class="weatherwidget-io" href="https://forecast7.com/fr/51d51n0d13/london/" data-label_1="LONDRES" data-label_2="Météo" data-theme="pure" data-textcolor="#fff3b2" data-highcolor="#ffd700" data-lowcolor="#a87d2d" data-suncolor="#ffd700" data-mooncolor="#fff3b2" data-cloudcolor="#ccc" data-raincolor="#00aaff" data-snowcolor="#ffffff">Météo Londres</a>
-        <script>
-            !function(d,s,id){
-                var js,fjs=d.getElementsByTagName(s)[0];
-                if(!d.getElementById(id)){
-                    js=d.createElement(s);
-                    js.id=id;
-                    js.src='https://weatherwidget.io/js/widget.min.js';
-                    fjs.parentNode.insertBefore(js,fjs);
-                }
-            }(document,'script','weatherwidget-io-js');
-        </script>
+        <div class="weatherwidget-wrapper">
+            <!-- Widget météo WeatherWidget.io adapté mobile -->
+            <a class="weatherwidget-io" href="https://forecast7.com/fr/51d51n0d13/london/" 
+               data-label_1="LONDRES" 
+               data-label_2="Météo" 
+               data-theme="pure" 
+               data-textcolor="#fff3b2" 
+               data-highcolor="#ffd700" 
+               data-lowcolor="#a87d2d" 
+               data-suncolor="#ffd700" 
+               data-mooncolor="#fff3b2" 
+               data-cloudcolor="#ccc" 
+               data-raincolor="#00aaff" 
+               data-snowcolor="#ffffff">
+               Météo Londres
+            </a>
+        </div>
     </div>
+
+    <script>
+        !function(d,s,id){
+            var js,fjs=d.getElementsByTagName(s)[0];
+            if(!d.getElementById(id)){
+                js=d.createElement(s);
+                js.id=id;
+                js.src='https://weatherwidget.io/js/widget.min.js';
+                fjs.parentNode.insertBefore(js,fjs);
+            }
+        }(document,'script','weatherwidget-io-js');
+    </script>
 
     <div class="boutons">
         <a class="bouton" href="https://www.meteoblue.com/fr/meteo/semaine/londres_royaume-uni_2643743" target="_blank">
