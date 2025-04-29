@@ -6,31 +6,50 @@
   <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #111;
+      background-color: #000;
       color: #FFD700;
       font-family: 'IM Fell English SC', serif;
       text-align: center;
       padding: 40px;
     }
 
-    a.button {
-      display: block;
-      background: #a87d2d;
-      color: black;
-      text-decoration: none;
-      padding: 14px 28px;
-      margin: 12px auto;
-      border-radius: 12px;
+    h1 {
+      font-size: 2.3em;
       font-weight: bold;
-      font-size: 1.5em;
-      width: 80%;
-      max-width: 500px;
-      box-sizing: border-box;
-      transition: background 0.3s ease;
+      color: #FFD700;
+      margin-top: 25px;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
     }
 
-    a.button:hover {
+    .nav-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    a.nav-link {
+      display: block;
+      padding: 14px 24px;
+      width: 85%;
+      max-width: 300px;
+      background: #a87d2d;
+      border: 1px solid #8a6726;
+      border-radius: 6px;
+      color: #000;
+      text-decoration: none;
+      font-size: 1.2em;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-sizing: border-box;
+    }
+
+    a.nav-link:hover {
       background: #8a6726;
+      border-color: #000;
     }
   </style>
 </head>
