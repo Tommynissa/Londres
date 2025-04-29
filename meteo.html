@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo à Londres</title>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #000; color: #fff; font-family: 'IM Fell English SC', serif; margin: 0; padding: 20px;">
+
+    <!-- Icône nuage magique -->
+    <div style="text-align:center; margin-top:20px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Storm_icon_-_Noun_Project_10865.svg/512px-Storm_icon_-_Noun_Project_10865.svg.png" 
+             alt="Icône météo magique Harry Potter" 
+             style="width:80px; filter: brightness(0) saturate(100%) invert(85%) sepia(47%) saturate(500%) hue-rotate(5deg) brightness(90%) contrast(90%);">
+    </div>
+
+    <!-- Titre -->
+    <h1 style="text-align:center; font-family: 'IM Fell English SC', serif; color: #a87d2d;">Météo à Londres</h1>
+
+    <!-- Widget météo Londres -->
+    <div style="max-width: 600px; margin: 30px auto; background: rgba(0,0,0,0.6); padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #a87d2d;">
+        <a class="weatherwidget-io" 
+           href="https://forecast7.com/fr/51d51n0d13/london/" 
+           data-label_1="LONDRES" 
+           data-label_2="PRÉVISIONS 4 JOURS" 
+           data-font="IM Fell English SC" 
+           data-icons="Climacons Animated" 
+           data-theme="pure"
+           data-days="4"
+           data-basecolor="#a87d2d"
+           data-textcolor="#ffffff">
+           LONDRES - PRÉVISIONS MÉTÉO
+        </a>
+    </div>
+
+    <!-- Script pour le widget -->
+    <script>
+    !function(d,s,id){
+      var js,fjs = d.getElementsByTagName(s)[0];
+      if(!d.getElementById(id)){
+        js=d.createElement(s);
+        js.id=id;
+        js.src='https://weatherwidget.io/js/widget.min.js';
+        fjs.parentNode.insertBefore(js,fjs);
+      }
+    }(document,'script','weatherwidget-io-js');
+    </script>
+
+    <!-- Bouton Retour à l'accueil -->
+    <div style="text-align:center; margin-top:40px;">
+      <a href="index.html" 
+         style="display: inline-block; 
+                background-color: #a87d2d; 
+                color: #000; 
+                font-family: 'IM Fell English SC', serif; 
+                font-size: 20px; 
+                text-decoration: none; 
+                padding: 12px 24px; 
+                border-radius: 30px; 
+                box-shadow: 0 0 10px #a87d2d;">
+        ← Retour à l'accueil
+      </a>
+    </div>
+
+</body>
+</html>
