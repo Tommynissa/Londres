@@ -72,6 +72,35 @@ iframe {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 40px;
+  padding-bottom: 30px;
+}
+a.nav-link {
+  display: block;
+  padding: 14px 24px;
+  width: 85%;
+  max-width: 300px;
+  background: #a87d2d;
+  border: 1px solid #8a6726;
+  border-radius: 6px;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+a.nav-link:hover {
+  background: #8a6726;
+  border-color: #000;
+}
+
 </style>
 </head>
 <body>
@@ -101,7 +130,7 @@ iframe {
   </p>
 </div>
 
-<a class="btn-retour" href="index.html">← Retour à l’accueil</a>
+<div class="nav-buttons"><a class="nav-link" href="index.html">Retour à l’accueil</a></div>
 
 <div class="footer">
   <img alt="Illustration dorée" src="images/image-doree-londres.png"/>
