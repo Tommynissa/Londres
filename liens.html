@@ -1,109 +1,52 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Météo</title>
-    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #000000;
-            color: #fff3b2;
-            font-family: 'IM Fell English SC', serif;
-            text-align: center;
-            padding: 40px;
-        }
+  <meta charset="UTF-8">
+  <title>Liens utiles</title>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #111;
+      color: #FFD700;
+      font-family: 'IM Fell English SC', serif;
+      text-align: center;
+      padding: 40px;
+    }
 
-        h1 {
-            margin-top: 20px;
-            font-size: 3em;
-            color: #FFD700;
-        }
+    a.button {
+      display: block;
+      background: #a87d2d;
+      color: black;
+      text-decoration: none;
+      padding: 14px 28px;
+      margin: 12px auto;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 1.5em;
+      width: 80%;
+      max-width: 500px;
+      box-sizing: border-box;
+      transition: background 0.3s ease;
+    }
 
-        .meteo-container {
-            margin-top: 40px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-
-        .weatherwidget-wrapper {
-            width: 90%;
-            max-width: 400px;
-        }
-
-        a.button {
-            display: block;
-            background: #a87d2d;
-            color: black;
-            text-decoration: none;
-            padding: 14px 28px;
-            margin: 12px auto;
-            border-radius: 6px;
-            font-weight: bold;
-            font-size: 1.1em;
-            width: 80%; /* Largeur large sur mobile */
-            max-width: 400px; /* Limite sur PC */
-            box-sizing: border-box;
-        }
-
-        a.button:hover {
-            background: #8a6726;
-        }
-
-        .footer-image {
-            margin-top: 60px;
-            width: 100%;
-            max-width: 600px;
-        }
-    </style>
+    a.button:hover {
+      background: #8a6726;
+    }
+  </style>
 </head>
 <body>
 
-    <h1>Météo</h1>
+  <h1>Liens utiles pour ton week-end</h1>
 
-    <div class="meteo-container">
-        <div class="weatherwidget-wrapper">
-            <!-- Widget météo WeatherWidget.io corrigé -->
-            <a class="weatherwidget-io" href="https://forecast7.com/fr/51d51n0d13/london/" 
-               data-label_1="LONDRES" 
-               data-label_2="Météo" 
-               data-theme="dark" 
-               data-basecolor="transparent" 
-               data-textcolor="#fff3b2" 
-               data-highcolor="#ffd700" 
-               data-lowcolor="#a87d2d" 
-               data-suncolor="#ffd700" 
-               data-mooncolor="#fff3b2" 
-               data-cloudcolor="#ccc" 
-               data-raincolor="#00aaff" 
-               data-snowcolor="#ffffff">
-               Météo Londres
-            </a>
-        </div>
-    </div>
+  <a class="button" href="https://www.google.com/maps" target="_blank">→ Google Maps</a>
+  <a class="button" href="https://citymapper.com/london" target="_blank">→ Citymapper Londres</a>
+  <a class="button" href="https://tfl.gov.uk/" target="_blank">→ Transports TFL</a>
+  <a class="button" href="https://translate.google.com/" target="_blank">→ Google Translate</a>
+  <a class="button" href="https://content.tfl.gov.uk/standard-tube-map.pdf" target="_blank">→ Plan du métro PDF</a>
 
-    <script>
-        !function(d,s,id){
-            var js,fjs=d.getElementsByTagName(s)[0];
-            if(!d.getElementById(id)){
-                js=d.createElement(s);
-                js.id=id;
-                js.src='https://weatherwidget.io/js/widget.min.js';
-                fjs.parentNode.insertBefore(js,fjs);
-            }
-        }(document,'script','weatherwidget-io-js');
-    </script>
+  <br><br>
 
-    <br><br>
-
-    <a class="button" href="https://www.meteoblue.com/fr/meteo/semaine/londres_royaume-uni_2643743" target="_blank">Voir la météo détaillée</a>
-    <a class="button" href="index.html">Retour à l'accueil</a>
-
-    <div>
-        <img class="footer-image" src="images/image-doree-londres.png" alt="Londres doré">
-    </div>
+  <a class="button" href="index.html">← Retour à l'accueil</a>
 
 </body>
 </html>
