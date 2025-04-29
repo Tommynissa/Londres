@@ -25,10 +25,9 @@
 
         iframe {
             width: 90%;
-            max-width: 600px;
-            height: 450px;
+            max-width: 400px;
+            height: 250px;
             border: none;
-            background: none;
         }
 
         .boutons {
@@ -70,16 +69,21 @@
     <h1>Météo</h1>
 
     <div class="meteo-container">
-        <!-- Widget Meteoblue : prévisions pour Londres -->
-        <iframe src="https://www.meteoblue.com/fr/meteo/widget/daily/londres_royaume-uni_2643743?geoloc=fixed&days=5&tempunit=C&windunit=KMH&layout=image" 
-            allowtransparency="true" 
-            scrolling="no">
+        <!-- Nouveau widget météo élégant (Meteomatics / WeatherWidget.io style) -->
+        <iframe src="https://forecast7.com/en/51d51n0d13/london/" 
+                frameborder="0" 
+                scrolling="no" 
+                loading="lazy">
         </iframe>
     </div>
 
     <div class="boutons">
-        <a class="bouton" href="index.html">← Retour à l'accueil</a>
-        <a class="bouton" href="https://www.meteoblue.com/fr/meteo/semaine/londres_royaume-uni_2643743" target="_blank">Voir la météo détaillée</a>
+        <a class="bouton" href="https://www.meteoblue.com/fr/meteo/semaine/londres_royaume-uni_2643743" target="_blank">
+            Voir la météo détaillée
+        </a>
+        <a class="bouton" href="index.html">
+            Retour à l'accueil
+        </a>
     </div>
 
     <div>
