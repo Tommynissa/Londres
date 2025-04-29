@@ -31,16 +31,23 @@
             background: none;
         }
 
-        a.button {
+        .button-retour {
             display: inline-block;
             margin-top: 40px;
-            padding: 10px 20px;
+            padding: 10px 30px;
             background-color: #a87d2d;
-            color: #000;
-            text-decoration: none;
+            color: #000000;
             font-family: 'IM Fell English SC', serif;
-            font-size: 1.2em;
-            border-radius: 8px;
+            font-size: 1.5em;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-retour:hover {
+            background-color: #ffd700; /* Jaune plus clair au survol */
+            color: #000;
         }
     </style>
 </head>
@@ -53,7 +60,7 @@
         <iframe src="https://widget-example.com/meteo" title="Prévisions météo"></iframe>
     </div>
 
-    <a class="button" href="index.html">← Retour à l'accueil</a>
+    <a class="button-retour" href="index.html">← Retour à l'accueil</a>
 
 </body>
 </html>
