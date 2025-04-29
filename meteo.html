@@ -8,8 +8,8 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #000000; /* Fond noir */
-            color: #fff3b2; /* Texte jaune clair */
+            background-color: #000000;
+            color: #fff3b2;
             font-family: 'IM Fell English SC', serif;
             text-align: center;
         }
@@ -26,17 +26,17 @@
         iframe {
             border: none;
             width: 90%;
-            height: 500px;
+            height: 650px;
             max-width: 600px;
             background: none;
         }
 
         .bouton {
             display: inline-block;
-            margin-top: 40px;
+            margin: 20px 10px 0 10px;
             padding: 12px 30px;
-            background-color: #a87d2d; /* Fond doré chaud */
-            color: #000000; /* Texte noir */
+            background-color: #a87d2d;
+            color: #000000;
             font-family: 'IM Fell English SC', serif;
             font-size: 1.5em;
             border-radius: 12px;
@@ -46,7 +46,7 @@
         }
 
         .bouton:hover {
-            background-color: #ffd700; /* Doré plus clair au survol */
+            background-color: #ffd700;
             color: #000000;
         }
     </style>
@@ -56,11 +56,18 @@
     <h1>Météo</h1>
 
     <div class="meteo-container">
-        <!-- Exemple de widget météo -->
-        <iframe src="https://widget-example.com/meteo" title="Prévisions météo"></iframe>
+        <!-- Widget météo réel -->
+        <iframe src="https://www.meteoblue.com/fr/meteo/widget/daily/londres_royaume-uni_2643743?geoloc=fixed&days=4&tempunit=C&windunit=KMH&layout=image" 
+            frameborder="0" 
+            scrolling="NO" 
+            allowtransparency="true">
+        </iframe>
     </div>
 
-    <a class="bouton" href="index.html">← Retour à l'accueil</a>
+    <div>
+        <a class="bouton" href="index.html">← Retour à l'accueil</a>
+        <a class="bouton" href="https://www.meteoblue.com/fr/meteo/semaine/londres_royaume-uni_2643743" target="_blank">Voir la météo détaillée</a>
+    </div>
 
 </body>
 </html>
