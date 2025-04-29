@@ -1,250 +1,123 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta charset="utf-8"/>
-<title>
-   Vendredi - Bienvenue à Londres
-  </title>
+<title>Vendredi - Bienvenue à Londres</title>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
 <style>
-   body {
-      background-color: #000;
-      color: #FFD700;
-      
-      margin: 0;
-      padding: 60px 20px 40px;
-    }
-    .section {
-      display: none;
-      max-width: 800px;
-      margin: auto;
-      animation: fadeIn 0.8s ease-in-out;
-      position: relative;
-    }
-    .section.active {
-      display: block;
-    }
-    h1, h2 {
-      text-align: center;
-    }
-    iframe {
-      margin: 20px 0;
-      display: block;
-      width: 100%;
-    }
-    .btn {
-      background-color: #FFD700;
-      color: #000;
-      border: none;
-      padding: 10px 24px;
-      border-radius: 50px;
-      font-weight: bold;
-      font-size: 1em;
-      margin: 12px auto 10px;
-      display: block;
-      cursor: pointer;
-    }
-    .reponse {
-      display: none;
-      font-size: 0.95em;
-      margin-top: 5px;
-      color: #fffacd;
-      text-align: center;
-    }
-    .transition {
-      margin-top: 30px;
-      text-align: center;
-      font-style: italic;
-      color: #ccc;
-    }
-    .btn-magique {
-      position: absolute;
-      right: 0;
-      bottom: -80px;
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
-    .btn-magique .next-container {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 1.1em;
-      color: #FFD700;
-    }
-    .btn-magique img {
-      width: 50px;
-      transition: transform 0.3s;
-    }
-    .btn-magique:hover img {
-      transform: scale(1.1);
-    }
-    .lieu-img {
-      width: 100%;
-      margin: 20px 0 10px;
-      border: 1px solid #FFD700;
-    }
-    .footer {
-      width: 100%;
-      text-align: center;
-      opacity: 0.3;
-      margin-top: 80px;
-    }
-    .footer img {
-      width: 300px;
-    }
-    .btn-retour {
-      margin-top: 60px;
-      display: block;
-      text-align: center;
-      text-decoration: none;
-      background-color: #FFD700;
-      color: #000;
-      padding: 10px 24px;
-      border-radius: 50px;
-      font-weight: bold;
-      width: fit-content;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  
-nav, h1, h2 {
-  font-family: 'IM Fell English SC', serif;
-}
-  
-h2 {
-  font-family: 'IM Fell English SC', serif;
+body {
+  background-color: #000;
   color: #FFD700;
+  margin: 0;
+  padding: 60px 20px 40px;
+  font-family: 'IM Fell English SC', serif;
   text-align: center;
 }
-</style>
-<style>
-   body {
-  margin: 0;
-  padding: 0;
-  font-family: 'IM Fell English SC', serif;
-}
 .section {
-  padding: 20px;
-  box-sizing: border-box;
+  display: none;
+  max-width: 800px;
+  margin: auto;
+  animation: fadeIn 0.8s ease-in-out;
+  position: relative;
 }
-img.lieu-img {
-  max-width: 100%;
-  height: auto;
+.section.active {
   display: block;
-  margin: 0 auto 20px auto;
+}
+h1, h2 {
+  text-align: center;
 }
 iframe {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-}
-.btn-magique, .btn {
+  margin: 20px 0;
   display: block;
-  width: 90%;
-  max-width: 400px;
-  margin: 15px auto;
+  width: 100%;
+}
+.btn {
+  background-color: #FFD700;
+  color: #000;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-weight: bold;
   font-size: 1em;
+  margin: 12px auto 10px;
+  display: block;
+  cursor: pointer;
 }
-a {
-  word-break: break-word;
+.footer {
+  width: 100%;
+  text-align: center;
+  opacity: 0.3;
+  margin-top: 80px;
 }
-@media (max-width: 600px) {
-  h1, h2 {
-    font-size: 1.4em;
-    text-align: center;
-  }
-  p {
-    font-size: 1em;
-  }
-  .footer img {
-    max-width: 90%;
-  }
-  .btn-magique.previous,
-  .btn-magique.next {
-    position: static !important;
-    display: block !important;
-    margin: 10px auto !important;
-    width: 90% !important;
-    max-width: 300px;
-  }
-  .next-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-  }
+.footer img {
+  width: 300px;
 }
-  
-nav, h1, h2 {
-  font-family: 'IM Fell English SC', serif;
+.btn-retour {
+  margin-top: 60px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: #FFD700;
+  color: #000;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-weight: bold;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
-  </style>
-<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&amp;display=swap" rel="stylesheet"/>
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
 </head>
 <body>
-<nav style="display: flex; gap: 20px; font-size: 0.95em; margin-bottom: 30px; justify-content: flex-start;;">
-<a href="index.html" style="color: #FFD700; text-decoration: none;">
-    Accueil
-   </a>
-<a href="planning.html" style="color: #FFD700; text-decoration: none;">
-    Planning
-   </a>
-<a href="carte_londres.html" style="color: #FFD700; text-decoration: none;">
-    Carte
-   </a>
-<a href="carte_metro.html" style="color: #FFD700; text-decoration: none;">
-    Métro
-   </a>
+
+<nav style="display: flex; gap: 20px; font-size: 0.95em; margin-bottom: 30px; justify-content: flex-start;">
+  <a href="index.html" style="color: #FFD700; text-decoration: none;">Accueil</a>
+  <a href="planning.html" style="color: #FFD700; text-decoration: none;">Planning</a>
+  <a href="carte_londres.html" style="color: #FFD700; text-decoration: none;">Carte</a>
+  <a href="carte_metro.html" style="color: #FFD700; text-decoration: none;">Métro</a>
 </nav>
+
 <div class="section active">
-<img alt="Bienvenue à Londres" class="lieu-img" src="images/vendredi_intro.jpg" style="border: none !important; width: 100%; margin: 20px 0 10px;"/>
-<h2>
-    Bienvenue à Londres, sorcier voyageur !
-   </h2>
-<p>
+  <img alt="Bienvenue à Londres" class="lieu-img" src="images/vendredi_intro.jpg" style="border: none !important; width: 100%; margin: 20px 0 10px;"/>
+  <h2>Bienvenue à Londres, sorcier voyageur !</h2>
+  <p>
     Tu viens de débarquer dans le monde moldu, à l’aéroport de Gatwick. Il est temps de rejoindre ton repaire secret à Camden pour débuter cette aventure magique...
     Prépare ta carte du Maraudeur et suis les instructions ci-dessous pour t’y rendre sans t’égarer entre deux moldus trop pressés !
-   </p>
-<p style="color: #fff3b2; font-style: italic; margin-bottom: 12px;">
-    Depuis l’aéroport de Gatwick, suis les panneaux jusqu’à la gare située au terminal sud. Prends un train Thameslink en direction de Londres et descends à la station Farringdon (environ 45 minutes de trajet). À la sortie de la station Farringdon, prends l’escalator vers la sortie Cowcross Street, puis tourne à gauche. Remonte la rue pendant 8 à 10 minutes jusqu’à Eyre Street Hill, où se trouve ton hôtel au numéro 15–28.
-    <br/>
-<br/>
-    Consulte les
-    <a href="https://www.thameslinkrailway.com/travel-information/plan-your-journey/timetables" style="color:#FFD700; text-decoration:underline;" target="_blank">
-     horaires du Thameslink ici
+  </p>
+  <p style="color: #fff3b2; font-style: italic; margin-bottom: 12px;">
+    Depuis l’aéroport de Gatwick, suis les panneaux jusqu’à la gare située au terminal sud. Prends un train Thameslink en direction de Londres et descends à la station Farringdon (environ 45 minutes de trajet). À la sortie de la station Farringdon, prends l’escalator vers la sortie Cowcross Street, puis tourne à gauche. Remonte la rue pendant 8 à 10 minutes jusqu’à Eyre Street Hill, où se trouve ton hôtel au numéro 15–28.<br><br>
+    Consulte les <a href="https://www.thameslinkrailway.com/travel-information/plan-your-journey/timetables" style="color:#FFD700; text-decoration:underline;" target="_blank">horaires du Thameslink ici</a>.
+  </p>
+  <p style="text-align:center; margin: -10px 0 20px;">
+    <a href="https://www.google.com/maps/dir/Farringdon+Station,+London/15-28+Eyre+Street+Hill,+London+EC1R+5EW" style="color:#FFD700; font-style:italic; text-decoration:underline;" target="_blank">
+      → Itinéraire Google Maps à pied
     </a>
-    .
-   </p>
-<p style="text-align:center; margin: -10px 0 20px;">
-<a href="https://www.google.com/maps/dir/Farringdon+Station,+London/15-28+Eyre+Street+Hill,+London+EC1R+5EW/@51.5218132,-0.1107763,18z/data=!4m14!4m13!1m5!1m1!1s0x48761b548d3c038b:0x52e4c4dc2a28da0!2m2!1d-0.10655!2d51.52167!1m5!1m1!1s0x48761b511f78769d:0x74b85d0840cd9b6e!2m2!1d-0.1099582!2d51.5224592!3e2" style="color:#FFD700; font-style:italic; text-decoration:underline;" target="_blank">
-     → Itinéraire Google Maps à pied
-    </a><a href="https://maps.apple.com/?saddr=Farringdon Station, London&amp;daddr=15-28 Eyre Street Hill, London EC1R 5EW" style="color:#FFD700; font-style:italic; text-decoration:underline; display:block; text-align:center; margin-top:5px;" target="_blank">→ Itinéraire Apple Plans à pied</a>
-</p>
+  </p>
 </div>
-<a class="btn-retour" href="index.html">
-   ← Retour à l’accueil
-  </a>
+
+<a class="btn-retour" href="index.html">← Retour à l’accueil</a>
+
 <div class="footer">
-<img alt="Illustration dorée" src="images/image-doree-londres.png"/>
+  <img alt="Illustration dorée" src="images/image-doree-londres.png"/>
 </div>
+
 <script>
-   document.querySelectorAll('.btn-magique.next').forEach((btn, index) => {
-    btn.addEventListener('click', () => {
-      const sections = document.querySelectorAll('.section');
-      if (sections[index + 1]) {
-        sections[index + 1].classList.add('active');
-        sections[index + 1].scrollIntoView({ behavior: 'smooth' });
-      }
-    });
+document.querySelectorAll('.btn-magique.next').forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    const sections = document.querySelectorAll('.section');
+    if (sections[index + 1]) {
+      sections[index + 1].classList.add('active');
+      sections[index + 1].scrollIntoView({ behavior: 'smooth' });
+    }
   });
-  </script>
+});
+</script>
+
 </body>
 </html>
