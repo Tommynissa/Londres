@@ -20,13 +20,13 @@
         }
 
         .meteo-container {
-            margin-top: 50px;
+            margin-top: 40px;
         }
 
         iframe {
-            width: 100%;
-            max-width: 400px;
-            height: 300px;
+            width: 90%;
+            max-width: 600px;
+            height: 450px;
             border: none;
             background: none;
         }
@@ -70,14 +70,11 @@
     <h1>Météo</h1>
 
     <div class="meteo-container">
-        <!-- Nouveau widget météo design et sobre -->
-        <iframe src="https://weatherwidget.io/w/" scrolling="no"></iframe>
-        <script>
-            window.addEventListener('DOMContentLoaded', () => {
-                const iframe = document.querySelector('iframe');
-                iframe.src = "https://weatherwidget.io/w/?id=6c84890d74a54a3fb6aa01acfb0cb45f"; // exemple météo Londres
-            });
-        </script>
+        <!-- Widget Meteoblue : prévisions pour Londres -->
+        <iframe src="https://www.meteoblue.com/fr/meteo/widget/daily/londres_royaume-uni_2643743?geoloc=fixed&days=5&tempunit=C&windunit=KMH&layout=image" 
+            allowtransparency="true" 
+            scrolling="no">
+        </iframe>
     </div>
 
     <div class="boutons">
@@ -85,7 +82,6 @@
         <a class="bouton" href="https://www.meteoblue.com/fr/meteo/semaine/londres_royaume-uni_2643743" target="_blank">Voir la météo détaillée</a>
     </div>
 
-    <!-- Image dorée décorative en bas -->
     <div>
         <img class="footer-image" src="images/image-doree-londres.png" alt="Londres doré">
     </div>
