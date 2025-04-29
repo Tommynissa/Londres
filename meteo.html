@@ -23,13 +23,6 @@
             margin-top: 40px;
         }
 
-        iframe {
-            width: 90%;
-            max-width: 600px;
-            height: 520px;
-            border: none;
-        }
-
         .boutons {
             margin-top: 40px;
             display: flex;
@@ -69,12 +62,19 @@
     <h1>Météo</h1>
 
     <div class="meteo-container">
-        <!-- Widget Meteoblue (fonctionnel en iframe) -->
-        <iframe 
-            src="https://www.meteoblue.com/fr/meteo/widget/daily/londres_royaume-uni_2643743?geoloc=fixed&days=5&tempunit=C&windunit=KMH&layout=image" 
-            allowtransparency="true" 
-            scrolling="no">
-        </iframe>
+        <!-- Widget météo WeatherWidget.io -->
+        <a class="weatherwidget-io" href="https://forecast7.com/fr/51d51n0d13/london/" data-label_1="LONDRES" data-label_2="Météo" data-theme="pure" data-textcolor="#fff3b2" data-highcolor="#ffd700" data-lowcolor="#a87d2d" data-suncolor="#ffd700" data-mooncolor="#fff3b2" data-cloudcolor="#ccc" data-raincolor="#00aaff" data-snowcolor="#ffffff">Météo Londres</a>
+        <script>
+            !function(d,s,id){
+                var js,fjs=d.getElementsByTagName(s)[0];
+                if(!d.getElementById(id)){
+                    js=d.createElement(s);
+                    js.id=id;
+                    js.src='https://weatherwidget.io/js/widget.min.js';
+                    fjs.parentNode.insertBefore(js,fjs);
+                }
+            }(document,'script','weatherwidget-io-js');
+        </script>
     </div>
 
     <div class="boutons">
