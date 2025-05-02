@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Convertisseur Livre ↔ Euro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #000;
+      color: #FFD700;
+      font-family: 'Georgia', serif;
+      text-align: center;
+      padding: 30px;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    label, input, select, button {
+      font-size: 1.1em;
+      margin: 10px;
+    }
+    input, select {
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      width: 150px;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #c5a300;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 1.3em;
+      color: #fff3b2;
+    }
+    .footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>Convertisseur Livre Sterling ↔ Euro</h1>
+  <label for="amount">Montant :</label>
+  <input type="number" id="amount" placeholder="ex: 50" />
+
+  <label for="direction">Convertir :</label>
+  <select id="direction">
+    <option value="eur_to_gbp">€ → £</option>
+    <option value="gbp_to_eur">£ → €</option>
+  </select>
+
+  <label for="rate">Taux :</label>
+  <input type="number" step="0.01" id="rate" value="0.86" />
+
+  <br/>
+  <button onclick="convert()">Convertir</button>
+
+  <div id="result"></div>
+
+  <div class="footer">
+    Taux modifiable manuellement – actualisé au besoin
+  </div>
+
+  <script>
+    function convert() {
+      const amount = parseFloat(document.getElementById("amount").value);
+      const rate = parseFloat(document.getElementById("rate").value);
+      const direction = document.getElementById("direction").value;
+      const resultEl = document.getElementById("result");
+
+      if (isNaN(amount) || isNaN(rate)) {
+        resultEl.textContent = "Veuillez entrer un montant et un taux valides.";
+        return;
+      }
+
+      let result = 0;
+      let symbol = "";
+
+      if (direction === "eur_to_gbp") {
+        result = amount * rate;
+        symbol = "£";
+      } else {
+        result = amount / rate;
+        symbol = "€";
+      }
+
+      resultEl.textContent = "= " + symbol + result.toFixed(2);
+    }
+  </script>
+</body>
+</html>
